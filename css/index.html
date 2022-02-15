@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+    <title>AL-QUR'AN</title>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="css/4.css"
+  rel="stylesheet">
+  <link href="css/3.css" rel="stylesheet" type="text/css">
+<link href="css/2.css" rel="stylesheet" type="text/css">
+ <link rel="stylesheet" href="css/1.css">
+  <link rel="stylesheet" href="css/audio-player.css">
+<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/plus.css">
+  <link href="css/acord.css" rel="stylesheet" type="text/css">
+<link href="dp/dropdown2.css" rel="stylesheet" type="text/css">
+       <link rel="stylesheet" href="dp/dropdown.css">
+        <link rel="stylesheet" href="dp/demo.css">
+      
+ <style>
+        ul {
+            padding: 0px;
+            margin: 0px;
+        }
+        li {
+            list-style: none;
+        }
+        
+.head {
+ position: fixed; 
+            top: 0; 
+            left: 0; 
+            right: 0; 
+            margin: auto; 
+text-align: left;
+ color: #000;
+ }
+.content-head {
+ background-color: #f1f1f1;
+  border: 12px solid transparent;
+  padding-bottom: 50px;
+  -webkit-border-image: url(png/border3.png) 18 round; /* Safari 3.1-5 */
+  -o-border-image: url(png/border3.png) 18 round; /* Opera 11-12.1 */
+  border-image: url(png/border3.png) 30 round;
+
+}
+.navbar8 {
+  overflow: hidden;
+  position: relative;
+background-color: #3498DB;
+  background-image:url("png/9.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 5;
+ bottom: 50px;
+  text-align: center;
+ margin: 0 auto;
+ left:0;
+ padding: 6px 12px;
+border-top: 5px solid #9e6930;
+  border-bottom: 2px solid #9e6930;
+  z-index: 999;
+}
+.foter {
+ background-color: rgba(0,0,0,0.0);
+ position: fixed; 
+  margin: 0 auto;
+ left:0;
+text-align: center;
+bottom: 1px;
+  padding:0px;
+ color: #fff;
+ width: 100%;
+ z-index: 55;
+}
+.nex {
+  float: right;
+  margin-right:3px;
+  width: 12px;
+  padding:10px;
+  color: transparant;
+  background-image:url("png/nex.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%; 
+}
+.pre {
+  float: right;
+  margin-right:3px;
+  width: 12px;
+  padding:10px;
+  color: transparant;
+  background-image:url("png/prev.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%; 
+}
+.navbar {
+  overflow: hidden;
+  position: relative;
+background-color: #3498DB;
+  background-image:url("png/9.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 5;
+ bottom:0;
+  text-align: center;
+ margin: 0 auto;
+ left:0;
+ padding: 6px 12px;
+border-top: 5px solid #9e6930;
+  border-bottom: 2px solid #9e6930;
+}
+.centerload { 
+            position: absolute; 
+            top: -20px; 
+            bottom: 0; 
+            left: 0; 
+            right: 0; 
+            margin: auto; 
+        } 
+button {
+  margin-top: px;
+  padding: 2px 8px;
+  transition: 0.6s;
+  font-size: 10px;
+  color: #fff;
+   cursor: pointer;
+  border: none;
+  background-color: rgba(0,0,0,0.1);
+  float: right;
+}
+.playy {
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  padding: px;
+  float: right;
+  border: 2px solid #fff;
+  margin-right: 85px;
+  margin-top: -0px;
+}
+ .header a:hover  {
+color: #fff;
+}
+    </style>
+<style>
+.droopbtn {
+  position: relative; 
+            top: 0; 
+            left: 12px; 
+            right: 0; 
+  margin: 0 auto;
+text-align: center;
+  background-color: #3498DB;
+  background-image:url("png/juz.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  padding: 1px;
+  float: right;
+  border: 4px solid #fff;
+  margin-left: 0px;
+  border: none;
+  cursor: pointer;
+-webkit-animation: fadeEffect 1.5s;
+  animation: fadeEffect 1.5s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.droopdown {
+  position: relative;
+  display: inline-block;
+}
+.droopdown-content {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  background-color: #f1f1f1;
+  border: 12px solid transparent;
+  padding-bottom: 50px;
+  -webkit-border-image: url(png/border3.png) 18 round; /* Safari 3.1-5 */
+  -o-border-image: url(png/border3.png) 18 round; /* Opera 11-12.1 */
+  border-image: url(png/border3.png) 30 round;
+  min-width: 77%;
+  overflow: auto;
+  box-shadow: 0px 18px 36px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+ width: 77%;
+  height: 100%;
+ text-align: left;
+ padding-bottom: 10px;
+}
+
+.droopdown-content a {
+  border: 6px solid transparent;
+  padding: 1px;
+  -webkit-border-image: url(png/borderTh.png) 30 stretch; /* Safari 3.1-5 */
+  -o-border-image: url(png/borderTh.png) 30 stretch; /* Opera 11-12.1 */
+  border-image: url(png/borderTh.png) 30 stretch;
+  background-image:url("png/img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: black;
+  padding: 8px 2px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  margin-bottom: 2px;
+}
+.close-content {
+ position: fixed; 
+            top: 5px; 
+            right: 8%; 
+            margin: auto; 
+float: right;
+background-image:url("png/close.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 32px;
+  width: 32px;
+  display: block;
+ }
+.droopdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+<style>
+html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      color:#000;
+      margin: 0;
+      padding: 0;
+    overflow: hidden;
+    }
+
+</style>
+<style>
+.accord {
+  margin-top: -0px; 
+  background-color: rgba(0,0,0,0.0);
+  cursor: pointer;
+  padding: 0px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  transition: 0.4s;
+  color: red;
+  border-bottom: 3px solid #ccc;
+}
+
+.activeti, .accordion:hover {
+  
+}
+
+.accord:after {
+  content: '\21BA';
+  color: transparent;
+  font-weight: bold;
+  float: centered;
+  margin-left: -12px;
+  font-size: 25px;
+ border: 2px solid #ddd;
+ border-radius: 50%;
+  background: green;
+  padding: 0px 4px 1px 4px;
+ background-image:url("png/down-arrow.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 25px;
+  width: 25px;
+}
+
+.activeti:after {
+  content: "\21BB";
+   color: transparent;
+  border: 2px solid #ddd;
+ border-radius: 50%;
+ background: #9e6930;
+  padding: 0px 4px 1px 4px;
+  background-image:url("png/up-arrow.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 25px;
+  width: 25px;
+}
+
+.panell {
+  padding: 0 1px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
+<style> 
+      
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    -webkit-transform: translate3d(0, 50px, 0);
+            transform: translate3d(0, 50px, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeInUp {
+  from {
+    -webkit-transform: translate3d(0, 50px, 0);
+            transform: translate3d(0, 50px, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+.animated {
+  animation-duration: 1.8s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1.8s;
+  -webkit-animation-fill-mode: both;
+}
+
+.animatedFadeInUp {
+  opacity: 0;
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+    </style> 
+</head>
+
+<body>
+  
+  
+           
+ 
+    
+<div id="A1" class="tabcontent">
+ <div class="header">
+<button class="nex" onclick="openCity(event, 'A2')"><a href="#S.2" onClick="return noHistory(this);"></button></a>
+  <button class="tablinks" onclick="openCity(event, 'A1')" id="defaultOpen"> <a style="color: #fff;" href="#S.1" onClick="return noHistory(this);">Al-Fatihah</button></a>
+ <button class="pre" onclick="openCity(event, 'A114')"><a href="#S.114" onClick="return noHistory(this);"></button></a>
+ <input id="myInput" type="text" placeholder=" Search ayat..1~7">
+</div>
+<div id="myList" class="overflo">
+ <a id="1"></a>
+</div></div>
+<script src="alquran/01.js"></script>
+<script src="js/content/s1.js"></script>
+
+<div id="A2" class="tabcontent">
+<div class="header">
+ <button class="nex" onclick="openCity(event, 'A3')"><a href="#S.3" onClick="return noHistory(this);"></button></a>
+  <button class="tablinks"><a style="color: #fff;" href="#S.2" onClick="return noHistory(this);">Al-Baqarah</button></a>
+ <button class="pre" onclick="openCity(event, 'A1')"><a href="#S.1" onClick="return noHistory(this);"></button></a>
+<input id="myInput2" type="text" placeholder=" Search ayat..1~286">
+</div><div id="myList2" class="overflo">
+<a id="albaqarah"></a>
+</div> </div>
+<script src="alquran/02a.js"></script>
+<script src="js/content/s2.js"></script>
+
+<div id="A3" class="tabcontent">
+<div class="header">
+ <button class="nex" onclick="openCity(event, 'A4')"><a href="#S.4" onClick="return noHistory(this);"></button></a>
+  <button class="tablinks" onclick="openCity(event, 'A3')"><a style="color: #fff;" href="#S.3" onClick="return noHistory(this);">Al-'Imraan</button></a>
+ <button class="pre" onclick="openCity(event, 'A2')"><a href="#S.2" onClick="return noHistory(this);"></button></a>
+<input id="myInput3" type="text" placeholder=" Search ayat..1~200">
+</div><div id="myList3" class="overflo">
+<a id="alimraan"></a>
+</div></div>
+<script src="alquran/03.js"></script>
+<script src="js/content/s3.js"></script>
+
+<div id="A4" class="tabcontent">
+<div class="header">
+ <button class="nex" onclick="openCity(event, 'A5')"><a href="#S.5" onClick="return noHistory(this);"></button></a>
+  <button class="tablinks" onclick="openCity(event, 'A4')"><a style="color: #fff;" href="#S.4" onClick="return noHistory(this);">An-Nisaa'</button></a>
+ <button class="pre" onclick="openCity(event, 'A3')"><a href="#S.3" onClick="return noHistory(this);"></button></a>
+  <input id="myInput4" type="text" placeholder=" Search ayat..1~176">
+</div><div id="myList4" class="overflo">
+<a id="4.annisa"></a>
+</div></div>
+<script src="alquran/04.js"></script>
+<script src="js/content/s4.js"></script>
+
+<div id="A5" class="tabcontent">
+<div class="header">
+ <button class="nex" onclick="openCity(event, 'A6')"><a href="#S.6" onClick="return noHistory(this);"></button></a>
+  <button class="tablinks" onclick="openCity(event, 'A5')"><a style="color: #fff;" href="#S.5" onClick="return noHistory(this);">Al-Maaidah</button></a>
+  <button class="pre" onclick="openCity(event, 'A4')"><a href="#S.4" onClick="return noHistory(this);"></button></a>
+   <input id="myInput5" type="text" placeholder=" Search ayat..1~120">
+</div><div id="myList5" class="overflo">
+<a id="5.almaaidah"></a>
+</div></div>
+<script src="alquran/05.js"></script>
+<script src="js/content/s5.js"></script>
+
+<div id="A6" class="tabcontent">
+<div class="header">
+ <button class="nex" onclick="openCity(event, 'A7')"><a href="#S.7" onClick="return noHistory(this);"></button></a>
+  <button class="tablinks" onclick="openCity(event, 'A6')"><a style="color: #fff;" href="#S.6" onClick="return noHistory(this);">Al-An'aam</button></a>
+ <button class="pre" onclick="openCity(event, 'A5')"><a href="#S.5" onClick="return noHistory(this);"></button></a>
+    <input id="myInput6" type="text" placeholder=" Search ayat..1~165">
+</div><div id="myList6" class="overflo">
+<a id="6.alanam"></a>
+</div></div>
+<script src="alquran/06.js"></script>
+<script src="js/content/s6.js"></script>
+
+<div id="A7" class="tabcontent">
+<div class="header">
+ <button class="nex" onclick="openCity(event, 'A8')"><a href="#S.8" onClick="return noHistory(this);"></button></a>
+  <button class="tablinks" onclick="openCity(event, 'A7')"><a style="color: #fff;" href="#S.7" onClick="return noHistory(this);">Al-'Araaf</button></a>
+ <button class="pre" onclick="openCity(event, 'A6')"><a href="#S.6" onClick="return noHistory(this);"></button></a>
+     <input id="myInput7" type="text" placeholder=" Search ayat..1~206">
+</div><div id="myList7" class="overflo">
+<a id="7.alaraaf"></a>
+</div></div>
+<script src="alquran/07.js"></script>
+<script src="js/content/s7.js"></script>
+
+<div id="A8" class="tabcontent">
+<div class="header">
+ <button class="nex" onclick="openCity(event, 'A9')"><a href="#S.9" onClick="return noHistory(this);"></button></a>
+  <button class="tablinks" onclick="openCity(event, 'A8')"><a style="color: #fff;" href="#S.8" onClick="return noHistory(this);">Al-Anfaal</button></a>
+ <button class="pre" onclick="openCity(event, 'A7')"><a href="#S.7" onClick="return noHistory(this);"></button></a>
+     <input id="myInput8" type="text" placeholder=" Search ayat..1~75">
+</div><div id="myList8" class="overflo">
+<a id="8.alanfaal"></a>
+</div></div>
+<script src="alquran/08.js"></script>
+<script src="js/content/s8.js"></script>
+
+<div id="A9" class="tabcontent">
+<div class="header">
+ <button class="nex" onclick="openCity(event, 'A10')"><a href="#S.10" onClick="return noHistory(this);"></button></a>
+  <button class="tablinks" onclick="openCity(event, 'A9')"><a style="color: #fff;" href="#S.9" onClick="return noHistory(this);">At-Taubah</button></a>
+ <button class="pre" onclick="openCity(event, 'A8')"><a href="#S.8" onClick="return noHistory(this);"></button></a>
+     <input id="myInput9" type="text" placeholder=" Search ayat..1~129">
+</div><div id="myList9" class="overflo">
+<a id="9.attaubah"></a>
+</div></div>
+<script src="alquran/09.js"></script>
+<script src="js/content/s9.js"></script>
+
+<div id="A10" class="tabcontent">
+<div class="header">
+ <button class="nex" onclick="openCity(event, 'A11')"><a href="#S.11" onClick="return noHistory(this);"></button></a>
+  <button class="tablinks" onclick="openCity(event, 'A10')"><a style="color: #fff;" href="#S.10" onClick="return noHistory(this);">Yunus</button></a>
+ <button class="pre" onclick="openCity(event, 'A9')"><a href="#S.9" onClick="return noHistory(this);"></button></a>
+     <input id="myInput10" type="text" placeholder=" Search ayat..1~109">
+</div><div id="myList10" class="overflo">
+<a id="10.yunus"></a>
+</div></div>
+<script src="alquran/10.js"></script>
+<script src="js/content/s10.js"></script>
+
+<div id="A11" class="tabcontent">
+<div class="header">
+  <button class="nex" onclick="openCity(event, 'A12')"><a href="#S.12" onClick="return noHistory(this);"></button></a>
+  <button class="tablinks" onclick="openCity(event, 'A11')"><a style="color: #fff;" href="#S.11" onClick="return noHistory(this);">Huud</button></a>
+ <button class="pre" onclick="openCity(event, 'A10')"><a href="#S.10" onClick="return noHistory(this);"></button></a>
+     <input id="myInput11" type="text" placeholder=" Search ayat..1~123">
+</div><div id="myList11" class="overflo">
+<a id="11.huud"></a>
+</div></div>
+<script src="alquran/11.js"></script>
+<script src="js/content/s11.js"></script>
+
+<div id="A12" class="tabcontent">
+<div class="header">
+ <button class="nex" onclick="openCity(event, 'A13')"><a href="#S.13" onClick="return noHistory(this);"></button></a>
+  <button class="tablinks" onclick="openCity(event, 'A12')"><a style="color: #fff;" href="#S.12" onClick="return noHistory(this);">Yusuf</button></a>
+ <button class="pre" onclick="openCity(event, 'A11')"><a href="#S.11" onClick="return noHistory(this);"></button></a>
+     <input id="myInput12" type="text" placeholder=" Search ayat..1~111">
+</div><div id="myList12" class="overflo">
+<a id="12.yusuf"></a>
+</div></div>
+<script src="alquran/12.js"></script>
+<script src="js/content/s12.js"></script>
+
+<div id="A13" class="tabcontent">
+<div class="header">
+ <button class="nex" onclick="openCity(event, 'A14')"><a href="#S.14" onClick="return noHistory(this);"></button></a>
+  <button class="tablinks" onclick="openCity(event, 'A13')"><a style="color: #fff;" href="#S.13" onClick="return noHistory(this);">Ar-Ra'ad</button></a>
+ <button class="pre" onclick="openCity(event, 'A12')"><a href="#S.12" onClick="return noHistory(this);"></button></a>
+     <input id="myInput13" type="text" placeholder=" Search ayat..1~43">
+</div><div id="myList13" class="overflo">
+<a id="13.araad"></a> 
+</div></div>
+<script src="alquran/13.js"></script>
+<script src="js/content/s13.js"></script>
+
+<div id="A14" class="tabcontent">
+<div class="header">
+ <button class="nex" onclick="openCity(event, 'A15')"><a href="#S.15" onClick="return noHistory(this);"></button></a>
+  <button class="tablinks" onclick="openCity(event, 'A14')"><a style="color: #fff;" href="#S.14" onClick="return noHistory(this);">Ibrahim</button></a>
+ <button class="pre" onclick="openCity(event, 'A13')"><a href="#S.13" onClick="return noHistory(this);"></button></a>
+     <input id="myInput14" type="text" placeholder=" Search ayat..1~52">
+</div><div id="myList14" class="overflo">
+<a id="14.ibrahim"></a> 
+</div></div>
+<script src="alquran/14.js"></script>
+<script src="js/content/s14.js"></script>
+
+<div id="A15" class="tabcontent">
+<div class="header">
+  <button class="nex" onclick="openCity(event, 'A16')"><a href="#S.16" onClick="return noHistory(this);"></button></a>
+  <button class="tablinks" onclick="openCity(event, 'A15')"><a style="color: #fff;" href="#S.15" onClick="return noHistory(this);">Al-Hijr</button></a>
+ <button class="pre" onclick="openCity(event, 'A14')"><a href="#S.14" onClick="return noHistory(this);"></button></a>
+     <input id="myInput15" type="text" placeholder=" Search ayat..1~99">
+</div><div id="myList15" class="overflo">
+<a id="15.hijr"></a> 
+</div></div>
+<script src="alquran/15.js"></script>
+<script src="js/content/s15.js"></script>
+
+
+
+
+
+
+
+
+
+
+<div id="A114" class="tabcontent">
+<div class="header">
+<div onclick="my0114Function()" class="accordion">
+</div>
+<div class="panel panel2">
+  <a id="0114"></a>
+</div>
+  <button class="tablinks" onclick="openCity(event, 'A1')"><a href="#S.1"style="color: #fff;"> &#10094; 01  </button>
+  <button class="tablinks" onclick="openCity(event, 'A114')"><a href="#"style="color: #fff;">An-Naas</button>
+ <button class="tablinks" onclick="openCity(event, 'A113')"><a href="#S.133"style="color: #fff;"> 113 &#10095; </button>
+</div>
+<div id="myList114" class="overflo">
+<a id="114"></a>
+</div></div>
+</div></div></div>
+
+
+  <div class="dropdown dropdown-right">
+                <div class="more-btn"><img src='png/surat.png' style='width:60px;height:23px;'>
+                </div>
+                <ul class="dropdown-menu">
+    <li class="xx"></li>
+<a href="#S.1" onClick="return noHistory(this);" class="button"><b onclick="openCity(event, 'A1')"><srt1><img src='g/sname_1.png' style='margin-top:-4px;float:right;padding-right:6px;width:63px;height:30px;'></b></a> 
+ 
+<a href="#S.2" onClick="return noHistory(this);" class="button"><b onclick="openCity(event, 'A2')"><srt2><img src="g/sname_2.png" style="margin-top:-4px;float:right;padding-right:6px;width:62px;height:30px;"></b></a> 
+ 
+<a href="#S.3" onClick="return noHistory(this);" class="button"><b onclick="openCity(event, 'A3')"> <srt3><img src='g/sname_3.png' style='margin-top:-3px;float:right;padding-right:6px;width:60px;height:30px;'></b></a> 
+ 
+<a href="#S.4" onClick="return noHistory(this);" class="button"><b onclick="openCity(event, 'A4')"> <srt4><img src='g/sname_4.png' style='margin-top:-3px;float:right;padding-right:6px;width:63px;height:30px;'></b></a> 
+ 
+<a href="#S.5" onClick="return noHistory(this);" class="button"><b onclick="openCity(event, 'A5')"> <srt5><img src='g/sname_5.png' style='margin-top:-3px;float:right;padding-right:6px;width:55px;height:30px;'></b></a> 
+ 
+ <a href="#S.6" onClick="return noHistory(this);" class="button"><b onclick="openCity(event, 'A6')"><srt6><img src='g/sname_6.png' style='margin-top:-3px;float:right;padding-right:7px;width:59px;height:30px;'></b></a> 
+ 
+ <a href="#S.7" onClick="return noHistory(this);" class="button"><b onclick="openCity(event, 'A7')"><srt7><img src='g/sname_7.png' style='margin-top:-3px;float:right;padding-right:7px;width:57px;height:30px;'></b></a>
+
+<a href="#S.8" onClick="return noHistory(this);" class="button"><b onclick="openCity(event, 'A8')"><srt8><img src='g/sname_8.png' style='margin-top:-3px;float:right;padding-right:7px;width:68px;height:30px;'></b></a> 
+ 
+ <a href="#S.9" onClick="return noHistory(this);" class="button"><b onclick="openCity(event, 'A9')"><srt9><img src='g/sname_9.png' style='margin-top:-3px;float:right;padding-right:7px;width:65px;height:30px;'></b></a> 
+ 
+ <a href="#S.10" onClick="return noHistory(this);" class="button"><b onclick="openCity(event, 'A10')"><srt10><img src='g/sname_10.png' style='margin-top:-3px;float:right;padding-right:7px;width:59px;height:30px;'></b></a> 
+ 
+<a href="#S.11" onClick="return noHistory(this);" class="button"><b onclick="openCity(event, 'A11')"><srt11><img src='g/sname_11.png' style='margin-top:-3px;float:right;padding-right:7px;width:45px;height:30px;'></b></a> 
+ 
+<a href="#S.12" onClick="return noHistory(this);" class="button"><b onclick="openCity(event, 'A12')"><srt12><img src='g/sname_12.png' style='margin-top:-3px;float:right;padding-right:7px;width:58px;height:30px;'></b></a> 
+ 
+ <a href="#S.13" onClick="return noHistory(this);" class="button"><b onclick="openCity(event, 'A13')"><srt13><img src='g/sname_13.png' style='margin-top:-3px;float:right;padding-right:7px;width:56px;height:30px;'></b></a> 
+
+ <a href="#S.14" onClick="return noHistory(this);" class="button"><b onclick="openCity(event, 'A14')"><srt14><img src='g/sname_14.png' style='margin-top:-3px;float:right;padding-right:7px;width:62px;height:30px;'></b></a> 
+
+ <a href="#S.15" onClick="return noHistory(this);" class="button"><b onclick="openCity(event, 'A15')"><srt15><img src='g/sname_15.png' style='margin-top:-3px;float:right;padding-right:7px;width:52px;height:30px;'></b></a> 
+
+
+
+ 
+<b class="tablinks" onclick="openCity(event, 'A114')"><a class="button">114. An-Naas<img src='g/sname_114.png' style='margin-top:-3px;float:right;padding-right:px;width:50px;height:30px;'></b></a></b>
+</li>
+             
+            </ul>
+        
+            </div></div>
+        </div></div>
+
+
+
+
+
+<div class="foter">
+<button class="accord"></button>
+<div class="panell">
+  <div class="navbar">
+<div class="droopdown">
+  <span onclick="mydpFunction()" class="droopbtn"></span>
+  
+  <div id="myDroopdown" class="droopdown-content">
+ <div class="close-content">
+</div>
+<div class="roll animated animatedFadeInUp fadeInUp">
+     <a href="#S.1" onClick="return noHistory(this);"><span class="buttonjus" onclick="openCity(event, 'A1')"><jus1><n1></span></a>
+
+<a href="#2.142" onClick="return noHistory(this);"><span class="buttonjus" onclick="openCity(event, 'A2')"><jus2><n2></span></a>
+
+<a href="#2.253" onClick="return noHistory(this);"><span class="buttonjus" onclick="openCity(event, 'A2')"><jus3><n3></span></a>
+
+<a href="#3.92" onClick="return noHistory(this);"><span class="buttonjus" onclick="openCity(event, 'A3')"><jus4><n4></span></a>
+
+<a href="#4.24" onClick="return noHistory(this);"><span class="buttonjus" onclick="openCity(event, 'A4')"><jus5><n5></span></a>
+
+<a href="#4.148" onClick="return noHistory(this);"><span class="buttonjus" onclick="openCity(event, 'A4')"><jus6><n6></span></a>
+
+<a href="#5.83" onClick="return noHistory(this);"><span class="buttonjus" onclick="openCity(event, 'A5')"><jus7><n7></span></a>
+
+<a href="#6.111" onClick="return noHistory(this);"><span class="buttonjus" onclick="openCity(event, 'A6')"><jus8><n8></span></a>
+
+<a href="#7.88" onClick="return noHistory(this);"><span class="buttonjus" onclick="openCity(event, 'A7')"><jus9><n9></span></a>
+
+<a href="#8.41" onClick="return noHistory(this);"><span class="buttonjus" onclick="openCity(event, 'A8')"><jus10><n10></span></a>
+
+<a href="#9.94" onClick="return noHistory(this);"><span class="buttonjus" onclick="openCity(event, 'A9')"><jus11><n11></span></a>
+
+<a href="#11.6" onClick="return noHistory(this);"><span class="buttonjus" onclick="openCity(event, 'A11')"><jus12><n12></span></a>
+
+<a href="#12.53" onClick="return noHistory(this);"><span class="buttonjus" onclick="openCity(event, 'A12')"><jus13><n13></span></a>
+
+<a href="#15.2" onClick="return noHistory(this);"><span class="buttonjus" onclick="openCity(event, 'A15')"><jus14><n14></span></a>
+
+<a href="#S.17" onClick="return noHistory(this);"><span class="buttonjus" onclick="openCity(event, 'A17')"><jus15><n15></span></a>
+
+<a href="#0" onClick="return noHistory(this);"><span class="buttonjus" onclick="openCity(event, 'A4')"><jus16><n16></span></a>
+
+<a href="#18.75" onClick="return noHistory(this);"><span class="buttonjus" onclick="openCity(event, 'A18')"><jus17><n17></span></a>
+
+<a href="#23.1" onClick="return noHistory(this);"><span class="buttonjus" onclick="openCity(event, 'A23')"><jus18><n18></span></a>
+
+<a href="#25.21" onClick="return noHistory(this);"><span class="buttonjus" onclick="openCity(event, 'A25')"><jus19><n19></span></a>
+
+<a href="#26.60" onClick="return noHistory(this);"><span class="buttonjus" onclick="openCity(event, 'A26')"><jus20><n20></span></a>
+
+<a href="#29.45" onClick="return noHistory(this);"><span class="buttonjus" onclick="openCity(event, 'A29')"><jus21><n21></span></a>
+
+<a href="#33.31" onClick="return noHistory(this);"><span class="buttonjus" onclick="openCity(event, 'A33')"><jus22><n22></span></a>
+
+<a href="#36.22" onClick="return noHistory(this);"><span class="buttonjus" onclick="openCity(event, 'A36')"><jus23><n23></span></a>
+
+<a href="#39.32" onClick="return noHistory(this);"><span class="buttonjus" onclick="openCity(event, 'A39')"><jus24><n24></span></a>
+
+<a href="#41.47" onClick="return noHistory(this);"><span class="buttonjus" onclick="openCity(event, 'A41')"><jus25><n25></span></a>
+
+<a href="#46.1" onClick="return noHistory(this);"><span class="buttonjus" onclick="openCity(event, 'A46')"><jus26><n26></span></a>
+
+<a href="#51" onClick="return noHistory(this);"><span class="buttonjus" onclick="openCity(event, 'A31')"><jus27><n27></span></a>
+
+<a href="#58.1" onClick="return noHistory(this);"><span class="buttonjus" onclick="openCity(event, 'A58')"><jus28><n28></span></a>
+
+<a href="#67.1" onClick="return noHistory(this);"><span class="buttonjus" onclick="openCity(event, 'A67')"><jus29><n29></span></a>
+
+<a href="#78.1" onClick="return noHistory(this);"><span class="buttonjus" onclick="openCity(event, 'A78')"><jus30><n30></span></a>
+
+
+  </div>
+</div></div>
+
+<span class="playy">
+   <img  id="pause-button"class="material-icons play-pause d-none text-primary mr-2"aria-hidden="true" src="png/pause.png" style="width:22px;height:22px;margin-top:px;">
+    <img id="play-button"class="material-icons play-pause text-primary mr-2" aria-hidden="true" src="png/play.png" style="width:22px;height:22px;margin-top:px;"></i>
+          <span id="pause-button"class="material-icons play-pause d-none text-primary mr-2"aria-hidden="true"></span>
+</span>
+
+
+  
+<!-- Trigger/Open The Modal -->
+<span id="pupBtnn" class="fs"></span>
+
+<span id="otoyBtnku" class="font"></span>
+
+<a href="note/index.html">🔙</a>
+
+ <span id="myBtnni" class="bk-modal"><img src='png/full.png' style="width:25px;height:25px;margin-top: 6px;"></span>
+</div></div></div></div>
+
+  <!-- Modal content -->
+ <div id="myModal" class="modal">
+<div class="col ml-auto">
+          </div>
+  <div class="modal-content">
+ <div class="header2">
+    <img id="thumbnail" class="img-fluid rc" src="png/Allahu.png" alt="">
+</div>
+<div class="a">
+<div class="roll animated animatedFadeInUp fadeInUp">
+<div class="lead" id="title">
+        </div> </div></div></div>
+
+  <div class="navbar2" style="bottom: 1px;">
+ <div class="p-0 m-0" id="now-playing">
+    <span class="close"><img class="accordion-left" src="png/Collapse1.png" style="padding-right:20px;width:23px;height:23px;margin-top:5px;"></span>
+
+</div>
+
+ <div class="row align-items-center -0 mb-0 mx-0">
+  <div id="mDIV">
+      <a id="play-button"class="material-icons play-pause text-primary mr-2 mr-3"  aria-hidden="true"><span onclick="mFunction()" style="padding-left:0px;margin-top:px;"><img src="png/plays1.png" style="padding-left:30px;left;width:16px;height:16px;margin-top:-2px;"></span></a>
+</div>
+<a id="play-button" class="material-icons play-pause text-primary mr-2 mr-3" aria-hidden="true"><span onclick="mFunction()" style="margin-left:27px;"><img src="png/stop1.png" style="padding-left:px;width16px;height:16px;margin-top:-2px;"></span></a>
+         <a id="next-button"class="material-icons text-primary ml-2 mr-3" aria-hidden="true"><img src="png/nexs1.png" style="padding-left:0px;width:22px;height:16px;margin-top:-2px;"></a>
+         <div id="grad1"> <div class="progress-bar"></a>
+</div></div></div></div>
+</div></div></div></div>
+
+
+<!-- The Modal-pup -->
+<div id="pupModal" class="modalpup-pup">
+
+  <!-- Modal content -->
+  <div class="pup-content">
+    <div class="modal-header">
+      Tajwid Block Warna :
+    </div>
+    <div class="modal-body">
+     
+ <p id="tajwid"></p>
+
+ <div class="modal-footer">
+    <span class="tutup"><ok></span>
+    </div>
+  </div></div></div>
+<script src="js/tajwid.js"></script>
+
+
+<!-- The Modalle -->
+<div id="otoyModal" class="modalle">
+
+  <!-- Modal content -->
+  <div class="modalle-content">
+    <div class="modalle-body">
+     <b>Arabic Font</b><div class="zoom" id="demo"></div><br><br>
+<div id="closefont"></div>
+ <div id="fontsize"></div><br>
+ <div class="modalle-footer">
+    <span class="silang"><ok></span>
+    </div>
+  </div></div></div>
+<script src="js/"></script>
+
+ 
+
+<script src="js/content/pengantar.js"></script>
+<script src="js/content.js"></script>
+<script src="alquran/searchJquery.js"></script>
+<script src="alquran/cariayat.js"></script>
+<script src="js/camp.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("hapus").click(function(){
+    $(this).hide();
+  });
+});
+</script>
+
+
+<script>
+var acc = document.getElementsByClassName("accord");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("activeti");
+    var panell = this.nextElementSibling;
+    if (panell.style.maxHeight) {
+      panell.style.maxHeight = null;
+    } else {
+      panell.style.maxHeight = panell.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+
+  <script type="text/javascript"> function noHistory(aObj) { document.location.replace(aObj.href); return false; }
+ </script>
+
+  <script>
+function mFunction() {
+  var x = document.getElementById("mDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+   
+
+<link href="css/demo.css" rel="stylesheet" type="text/css"/>	
+		<link href="css/zoom.css" rel="stylesheet" type="text/css"/>
+			<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>	
+<script type="text/javascript" src="css/zoom.min.js"></script>
+<script type="text/javascript">
+		$("document").ready(function(){	
+			$("#demo").zoom({
+				path: "div.c"
+				//show/hide				
+				, show_zoom: true //font-size
+				, show_alignment: false //text-align
+				, show_font_family: true //font-family
+				, show_bold: false //font-weight
+				, show_colors: true //color
+				, show_reset: true //reset
+
+                 //default properties
+	            , font_size: "33"
+	            , font_family:  "LPMQ.ttf"
+	            , font_weight: "normal"
+                , line_height_step: 34
+	            , text_align: "right"
+	            , color: "black"
+                , cookies: false
+                , expiration: 180 //cookies expiration in days (-110 = cookies expire when browser is closed)
+                , colors: ["black", "#686868", "#006300", "#774500", "#2918C9", "#4F2C7A", "#518E2D", "#96122C", "red", "#ff9900", "#00ffff", "#ff00ff", "#00ff00"]
+			});
+		});
+		</script>
+
+<script type="text/javascript">
+		$("document").ready(function(){	
+			$("#demo1").zoom({
+				path: "div.lt"
+				
+				//show/hide				
+				,show_alignment: false //text-align
+				,show_font_family: false //font-family
+				,show_bold: true //font-weight
+				,show_colors: true //color
+				,show_reset: true //reset
+				,show_zoom: true //font-size
+
+                 //default properties
+	            , font_size: "12"
+	            , font_family: "serif"
+	            , font_weight: "bold"
+                , line_height_step: 4
+	            , text_align: "justify"
+	            , color: "black"
+                , cookies: true
+                , expiration: 180 //cookies expiration in days (-110 = cookies expire when browser is closed)
+                , colors: ["black", "#686868", "#006300", "#774500", "#2918C9", "#4F2C7A", "#518E2D", "#96122C", "red"]
+			});
+		});
+		</script>
+	<script type="text/javascript">
+		$("document").ready(function(){	
+			$("#demo2").zoom({
+				path: "div.tj"
+				
+				//show/hide				
+				,show_zoom: true //font-size
+				,show_alignment: false //text-align
+				,show_font_family: false //font-family
+				,show_bold: true //font-weight
+				,show_colors: true //color
+				,show_reset: true //reset
+
+                 //default properties
+	            , font_size: "12"
+	            , font_family: "verdana"
+	            , font_weight: "normal"
+                , line_height_step: 4
+	            , text_align: "justify"
+	            , color: "green"
+                , cookies: true
+			});
+		});
+		</script>
+
+ <script src="jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+        <script src="dp/dropdown.js" charset="utf-8"></script>
+
+<script src="js/jquery-ui-slider.js" charset="utf-8"></script>
+<script src="js/audioPlayer.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<audio id="audio-player" class="d-none" src="" type="audio/mp3" controls="controls"></audio>
+
+
+</body>
+
+</html>

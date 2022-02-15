@@ -1,12 +1,12 @@
-﻿#myInput, #myInput2, #myInput3, #myInput4, #myInput5, #myInput6, #myInput7, #myInput8, #myInput9, #myInput10, #myInput11, #myInput12, #myInput13, #myInput14, #myInput15, #myInput16, #myInput17, #myInput18, #myInput19, #myInput20, #myInput21, #myInput22, #myInput23, #myInput24, #myInput25, #myInput26, #myInput27, #myInput28, #myInput29, #myInput30, #myInput31, #myInput32, #myInput33, #myInput34, #myInput35, #myInput36, #myInput37, #myInput38, #myInput39, #myInput40, #myInput41, #myInput42, #myInput43, #myInput44, #myInput45, #myInput46, #myInput47, #myInput48, #myInput49, #myInput50, #myInput51, #myInput52, #myInput53, #myInput54, #myInput55, #myInput56, #myInput57, #myInput58, #myInput59, #myInput60, #myInput61, #myInput62, #myInput63, #myInput64, #myInput65, #myInput66, #myInput67, #myInput68, #myInput69, #myInput70, #myInput71, #myInput72, #myInput73, #myInput74, #myInput75, #myInput76, #myInput77, #myInput78, #myInput79, #myInput80, #myInput81, #myInput82, #myInput83, #myInput84, #myInput85, #myInput86, #myInput87, #myInput88, #myInput89, #myInput90, #myInput91, #myInput92, #myInput93, #myInput94, #myInput95, #myInput96, #myInput97, #myInput98, #myInput99, #myInput100, #myInput101, #myInput102, #myInput103, #myInput104, #myInput105, #myInput106, #myInput107, #myInput108, #myInput109, #myInput110, #myInput111, #myInput112, #myInput113, #myInput1, #myInput115 {
+﻿#myInput, #myInput2, #myInput3, #myInput4, #myInput5, #myInput6, #myInput7, #myInput8, #myInput9, #myInput10, #myInput11, #myInput12, #myInput13, #myInput14, #myInput15, #myInput16, #myInput17, #myInput18, #myInput19, #myInput20, #myInput21, #myInput22, #myInput23, #myInput24, #myInput25, #myInput26, #myInput27, #myInput28, #myInput29, #myInput30, #myInput31, #myInput32, #myInput33, #myInput34, #myInput35, #myInput36, #myInput37, #myInput38, #myInput39, #myInput40, #myInput41, #myInput42, #myInput43, #myInput44, #myInput45, #myInput46, #myInput47, #myInput48, #myInput49, #myInput50, #myInput51, #myInput52, #myInput53, #myInput54, #myInput55, #myInput56, #myInput57, #myInput58, #myInput59, #myInput60, #myInput61, #myInput62, #myInput63, #myInput64, #myInput65, #myInput66, #myInput67, #myInput68, #myInput69, #myInput70, #myInput71, #myInput72, #myInput73, #myInput74, #myInput75, #myInput76, #myInput77, #myInput78, #myInput79, #myInput80, #myInput81, #myInput82, #myInput83, #myInput84, #myInput85, #myInput86, #myInput87, #myInput88, #myInput89, #myInput90, #myInput91, #myInput92, #myInput93, #myInput94, #myInput95, #myInput96, #myInput97, #myInput98, #myInput99, #myInput100, #myInput101, #myInput102, #myInput103, #myInput104, #myInput105, #myInput106, #myInput107, #myInput108, #myInput109, #myInput110, #myInput111, #myInput112, #myInput113, #myInput1, #myInput115, #myInputjuzz, #myInputsurah {
   background-color: #fff;
-  background-image: url('../png/iconsearch.png');
+  background-image: url('../png/seach.png');
   background-position: 9px 2px;
   background-repeat: no-repeat;
-  width: 40%;
+  width: 38%;
   font-size: 10px;
   padding: 2px 2px 2px 30px;
-  border: 1px solid #ddd;
+  border: 1px solid green;
   margin-left: 2px;
   border-radius: 8px;
   color: #004d00;
@@ -74,22 +74,6 @@ visibility: hidden;
  border: none; 
 }
 
-div.lt {
-  text-align: left;
-  text-align:justify;
-  color:#000033;
-  font-size: smaller;
-  font-weight: bold;
-  padding: 6px;
-}
-
-div.tj {
-  text-align: left;
-  text-align:justify;
-  color:#4D7523;
-  font-size: small;
-  padding: 6px;
-}
 div.tajwid {
   font-family: Islamic;
    src: url(Islamic.ttf);
@@ -529,895 +513,914 @@ n10,n11,n12,n13,n14,n15,n16,n17,n18,n19,n20,n21,n22,n23,n24,n25,n26,n27,n28,n29,
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  margin-top:5px;
+  margin-top:0px;
   text-align: center ;
-  padding: 10px 10px 45px ;
+  padding: 8px 5px 48px 5px ;
   font-size: 15px;
   color: #fff;
+  border-top: 1px solid #fff;
+}
+.bgsrh2 {
+ width: auto 100%;
+ background-image:url("../png/img1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-top:0px;
+  text-align: center ;
+  padding: 0px 5px 48px 5px ;
+  font-size: 15px;
+  color: #fff;
+}
+.bgarabhm {
+  margin-top: 12px;
+  margin-right: 12px;
+  background-color: #fff;
+  padding: 3px;
+  float:right;
+  border-radius: 8px;
+  border: 1px solid green;
 }
 .bgarab {
   background-color: #fff;
   padding: 3px;
   float:right;
   border-radius: 8px;
+  margin-top: 5px;
 }
  sr1::before { 
   content: " 1. Al-Fatihah  ";
   font-weight: bold;
 }
-n1::before { 
+n1::after { 
   content: "١";
 }
-n2::before { 
+n2::after { 
   content: " ٢ ";
 }
-n3::before { 
+n3::after { 
   content: " ٣ ";
 }
-n4::before { 
+n4::after { 
   content: " ٤ ";
 }
-n5::before { 
+n5::after { 
   content: " ٥ ";
 }
-n6::before {
+n6::after {
   content: " ٦ ";
 }
-n7::before { 
+n7::after { 
   content: " ٧ ";
 }
-n8::before { 
+n8::after { 
   content: " ٨ ";
 }
-n9::before { 
+n9::after { 
   content: " ٩ ";
 }
-n10::before { 
+n10::after { 
   content: " ١٠ ";
 }
-n11::before { 
+n11::after { 
   content: " ١١ ";
 }
-n12::before {
+n12::after {
   content: " ١٢ ";
 }
-n13::before { 
+n13::after { 
   content: " ١٣ ";
 }
-n14::before { 
+n14::after { 
   content: " ١٤ ";
 }
-n15::before { 
+n15::after { 
   content: " ١٥ ";
 }
-n16::before { 
+n16::after { 
   content: " ١٦ ";
 }
-n17::before { 
+n17::after { 
   content: " ١٧ ";
 }
-n18::before {
+n18::after {
   content: " ١٨ ";
 }
-n19::before {
+n19::after {
   content: " ١٩ ";
 }
-n20::before {
+n20::after {
   content: " ٢٠ ";
 }
-n21::before { 
+n21::after { 
   content: " ٢١ ";
 }
-n22::before { 
+n22::after { 
   content: " ٢٢ ";
 }
-n23::before { 
+n23::after { 
   content: " ٢٣ ";
 }
-n24::before { 
+n24::after { 
   content: " ٢٤ ";
 }
-n25::before { 
+n25::after { 
   content: " ٢٥ ";
 }
-n26::before { 
+n26::after { 
   content: " ٢٦ ";
 }
-n27::before { 
+n27::after { 
   content: " ٢٧ ";
 }
-n28::before { 
+n28::after { 
   content: " ٢٨ ";
 }
-n29::before { 
+n29::after { 
   content: " ٢٩ ";
 }
-n30::before { 
+n30::after { 
   content: " ٣٠ ";
 }
-n31::before { 
+n31::after { 
   content: " ٣١ ";
 }
-n32::before { 
+n32::after { 
   content: " ٣٢ ";
 }
-n33::before { 
+n33::after { 
   content: " ٣٣ ";
 }
-n34::before { 
+n34::after { 
   content: " ٣٤ ";
 }
-n35::before { 
+n35::after { 
   content: " ٣٥ ";
 }
-n36::before { 
+n36::after { 
   content: " ٣٦ ";
 }
-n37::before { 
+n37::after { 
   content: " ٣٧ ";
 }
-n38::before { 
+n38::after { 
   content: " ٣٨ ";
 }
-n39::before { 
+n39::after { 
   content: " ٣٩ ";
 }
-n40::before { 
+n40::after { 
   content: " ٤٠ ";
 }
-n41::before { 
+n41::after { 
   content: " ٤١ ";
 }
-n42::before { 
+n42::after { 
   content: " ٤٢ ";
 }
-n43::before { 
+n43::after { 
   content: " ٤٣ ";
 }
-n44::before { 
+n44::after { 
   content: " ٤٤ ";
 }
-n45::before {
+n45::after {
   content: " ٤٥ ";
 }
-n46::before { 
+n46::after { 
   content: " ٤٦ ";
 }
-n47::before { 
+n47::after { 
   content: " ٤٧ ";
 }
-n48::before { 
+n48::after { 
   content: " ٤٨ ";
 }
-n49::before { 
+n49::after { 
   content: " ٤٩ ";
 }
-n50::before { 
+n50::after { 
   content: " ٥٠ ";
 }
-n51::before { 
+n51::after { 
   content: " ٥١ ";
 }
-n52::before { 
+n52::after { 
   content: " ٥٢ ";
 }
-n53::before { 
+n53::after { 
   content: " ٥٣ ";
 }
-n54::before { 
+n54::after { 
   content: " ٥٤ ";
 }
-n55::before { 
+n55::after { 
   content: " ٥٥ ";
 }
-n56::before { 
+n56::after { 
   content: " ٥٦ ";
 }
-n57::before { 
+n57::after { 
   content: " ٥٧ ";
 }
-n58::before { 
+n58::after { 
   content: " ٥٨ ";
 }
-n59::before { 
+n59::after { 
   content: " ٥٩ ";
 }
-n60::before { 
+n60::after { 
   content: " ٦٠ ";
 }
-n61::before { 
+n61::after { 
   content: " ٦١ ";
 }
-n62::before { 
+n62::after { 
   content: " ٦٢ ";
 }
-n63::before { 
+n63::after { 
   content: " ٦٣ ";
 }
-n64::before { 
+n64::after { 
   content: " ٦٤ ";
 }
-n65::before { 
+n65::after { 
   content: " ٦٥ ";
 }
-n66::before { 
+n66::after { 
   content: " ٦٦ ";
 }
-n67::before { 
+n67::after { 
   content: " ٦٧ ";
 }
-n68::before { 
+n68::after { 
   content: " ٦٨ ";
 }
-n69::before { 
+n69::after { 
   content: " ٦٩ ";
 }
-n70::before { 
+n70::after { 
   content: " ٧٠ ";
 }
-n71::before { 
+n71::after { 
   content: " ٧١ ";
 }
-n72::before { 
+n72::after { 
   content: " ٧٢ ";
 }
-n73::before { 
+n73::after { 
   content: " ٧٣ ";
 }
-n74::before { 
+n74::after { 
   content: " ٧٤ ";
 }
-n75::before { 
+n75::after { 
   content: " ٧٥ ";
 }
-n76::before { 
+n76::after { 
   content: " ٧٦ ";
 }
-n77::before { 
+n77::after { 
   content: " ٧٧ ";
 }
-n78::before { 
+n78::after { 
   content: " ٧٨ ";
 }
-n79::before { 
+n79::after { 
   content: " ٧٩ ";
 }
-n80::before { 
+n80::after { 
   content: " ٨٠ "
   
 }
-n81::before { 
+n81::after { 
   content: " ٨١ ";
   
 }
-n82::before { 
+n82::after { 
   content: " ٨٢ ";
 }
-n83::before { 
+n83::after { 
   content: " ٨٣ ";
 }
-n84::before { 
+n84::after { 
   content: " ٨٤ ";
 }
-n85::before { 
+n85::after { 
   content: " ٨٥ ";
 }
-n86::before { 
+n86::after { 
   content: " ٨٦ ";
 }
-n87::before { 
+n87::after { 
   content: " ٨٧ ";
 }
-n88::before { 
+n88::after { 
   content: " ٨٨ ";
 }
-n89::before { 
+n89::after { 
   content: " ٨٩ ";
 }
-n90::before { 
+n90::after { 
   content: " ٩٠ ";
 }
-n91::before { 
+n91::after { 
   content: " ٩١ ";
 }
-n92::before { 
+n92::after { 
   content: " ٩٢ ";
 }
-n93::before { 
+n93::after { 
   content: " ٩٣ ";
 }
-n94::before { 
+n94::after { 
   content: " ٩٤ ";
 }
-n95::before { 
+n95::after { 
   content: " ٩٥ ";
 }
-n96::before { 
+n96::after { 
   content: " ٩٦ ";
 }
-n97::before { 
+n97::after { 
   content: " ٩٧ ";
 }
-n98::before { 
+n98::after { 
   content: " ٩٨ ";
 }
-n99::before { 
+n99::after { 
   content: " ٩٩ ";
 }
-n100::before { 
+n100::after { 
   content: " ١٠٠ ";
 }
-n101::before { 
+n101::after { 
   content: " ١٠١ ";
 }
-n102::before { 
+n102::after { 
   content: " ١٠٢ ";
 }
-n103::before { 
+n103::after { 
   content: " ١٠٣ ";
 }
-n104::before { 
+n104::after { 
   content: " ١٠٤ ";
 }
-n105::before { 
+n105::after { 
   content: " ١٠٥ ";
 }
-n106::before { 
+n106::after { 
   content: " ١٠٦ ";
 }
-n107::before { 
+n107::after { 
   content: " ١٠٧ ";
 }
-n108::before { 
+n108::after { 
   content: " ١٠٨ ";
   
 }
-n109::before { 
+n109::after { 
   content: " ١٠٩ ";
   
 }
-n110::before { 
+n110::after { 
   content: " ١١٠ ";
   
 }
-n111::before { 
+n111::after { 
   content: " ١١١ ";
   
 }
-n112::before { 
+n112::after { 
   content: " ١١٢ ";
   
 }
-n113::before { 
+n113::after { 
   content: " ١١٣ ";
    
 }
-n114::before { 
+n114::after { 
   content: " ١١٤ ";
   
 }
-n115::before { 
+n115::after { 
   content: " ١١٥ ";
   
 }
-n116::before { 
+n116::after { 
   content: " ١١٦ ";
   
 }
-n117::before { 
+n117::after { 
   content: " ١١٧ ";
   
 }
-n118::before { 
+n118::after { 
   content: " ١١٨ ";
   
 }
-n119::before { 
+n119::after { 
   content: " ١١٩ ";
 }
-n120::before { 
+n120::after { 
   content: " ١٢٠ ";
 }
-n121::before { 
+n121::after { 
   content: " ١٢١ ";
 }
-n122::before { 
+n122::after { 
   content: " ١٢٢ ";
 }
-n123::before { 
+n123::after { 
   content: " ١٢٣ ";
 }
-n124::before { 
+n124::after { 
   content: " ١٢٤ ";
 }
-n125::before { 
+n125::after { 
   content: " ١٢٥ ";
 }
-n126::before { 
+n126::after { 
   content: " ١٢٦ ";
 }
-n127::before { 
+n127::after { 
   content: " ١٢٧ ";
 }
-n128::before { 
+n128::after { 
   content: " ١٢٨ ";
 }
-n129::before { 
+n129::after { 
   content: " ١٢٩ ";
 }
-n130::before { 
+n130::after { 
   content: " ١٣٠ ";
 }
-n131::before { 
+n131::after { 
   content: " ١٣١ ";
 }
-n132::before { 
+n132::after { 
   content: " ١٣٢ ";
 }
-n133::before { 
+n133::after { 
   content: " ١٣٣ ";
 }
-n134::before { 
+n134::after { 
   content: " ١٣٤ ";
 }
-n135::before { 
+n135::after { 
   content: " ١٣٥ ";
 }
-n136::before { 
+n136::after { 
   content: " ١٣٦ "
 }
-n137::before { 
+n137::after { 
   content: " ١٣٧ ";
 }
-n138::before { 
+n138::after { 
   content: " ١٣٨ ";
 }
-n139::before { 
+n139::after { 
   content: " ١٣٩ ";
 }
-n140::before { 
+n140::after { 
   content: " ١٤٠ ";
 }
-n141::before { 
+n141::after { 
   content: " ١٤١ ";
 }
-n142::before { 
+n142::after { 
   content: " ١٤٢ ";
 }
-n143::before { 
+n143::after { 
   content: " ١٤٣ ";
 }
-n144::before { 
+n144::after { 
   content: " ١٤٤ ";
 }
-n145::before { 
+n145::after { 
   content: " ١٤٥ ";
 }
-n146::before { 
+n146::after { 
   content: " ١٤٦ ";
 }
-n147::before { 
+n147::after { 
   content: " ١٤٧ ";
 }
-n148::before { 
+n148::after { 
   content: " ١٤٨ ";
 }
-n149::before { 
+n149::after { 
   content: " ١٤٩ ";
 }
-n150::before { 
+n150::after { 
   content: " ١٥٠ ";
 }
-n151::before { 
+n151::after { 
   content: " ١٥١ ";
 }
-n152::before { 
+n152::after { 
   content: " ١٥٢ ";
 }
-n153::before { 
+n153::after { 
   content: " ١٥٣ ";
 }
-n154::before { 
+n154::after { 
   content: " ١٥٤ ";
 }
-n155::before { 
+n155::after { 
   content: " ١٥٥ ";
 }
-n156::before { 
+n156::after { 
   content: " ١٥٦ ";
 }
-n157::before { 
+n157::after { 
   content: " ١٥٧ ";
 }
-n158::before { 
+n158::after { 
   content: " ١٥٨ ";
 }
-n159::before { 
+n159::after { 
   content: " ١٥٩ ";
 }
-n160::before { 
+n160::after { 
   content: " ١٦٠ ";
 }
-n161::before { 
+n161::after { 
   content: " ١٦١ ";
 }
-n162::before { 
+n162::after { 
   content: " ١٦٢ ";
 }
-n163::before { 
+n163::after { 
   content: " ١٦٣ ";
 }
-n164::before { 
+n164::after { 
   content: " ١٦٥ ";
 }
-n165::before { 
+n165::after { 
   content: " ١٦٥ ";
 }
-n166::before { 
+n166::after { 
   content: " ١٦٦ ";
 }
-n167::before { 
+n167::after { 
   content: " ١٦٧ ";
 }
-n168::before { 
+n168::after { 
   content: " ١٦٨ ";
 }
-n169::before { 
+n169::after { 
   content: " ١٦٩ ";
 }
-n170::before { 
+n170::after { 
   content: " ١٧٠ ";
 }
-n171::before { 
+n171::after { 
   content: " ١٧١ ";
 }
-n172::before { 
+n172::after { 
   content: " ١٧٢ ";
 }
-n173::before { 
+n173::after { 
   content: " ١٧٣ ";
 }
-n174::before { 
+n174::after { 
   content: " ١٧٤ ";
 }
-n175::before { 
+n175::after { 
   content: " ١٧٥ ";
 }
-n176::before { 
+n176::after { 
   content: " ١٧٦ ";
 }
-n177::before { 
+n177::after { 
   content: " ١٧٧ ";
 }
-n178::before { 
+n178::after { 
   content: " ١٧٨ ";
 }
-n179::before { 
+n179::after { 
   content: " ١٧٩ ";
 }
-n180::before { 
+n180::after { 
   content: " ١٨٠ ";
 }
-n181::before { 
+n181::after { 
   content: " ١٨١ ";
 }
-n182::before { 
+n182::after { 
   content: " ١٨٢ ";
 }
-n183::before { 
+n183::after { 
   content: " ١٨٣ ";
 }
-n184::before { 
+n184::after { 
   content: " ١٨٤ ";
 }
-n185::before { 
+n185::after { 
   content: " ١٨٥ ";
 }
-n186::before { 
+n186::after { 
   content: " ١٨٦ ";
-  text-align: right ;
-  color: #e68a00;
 }
-n187::before { 
+n187::after { 
   content: " ١٨٧ ";
 }
-n188::before { 
+n188::after { 
   content: " ١٨٨ ";
 }
-n189::before { 
+n189::after { 
   content: " ١٨٩ ";
 }
-n190::before { 
+n190::after { 
   content: " ١٩٠ ";
 }
-n191::before { 
+n191::after { 
   content: " ١٩١ ";
 }
-n192::before { 
+n192::after { 
   content: " ١٩٢ ";
 }
-n193::before { 
+n193::after { 
   content: " ١٩٣ ";
 }
-n194::before { 
+n194::after { 
   content: " ١٩٤ ";
 }
-n195::before { 
+n195::after { 
   content: " ١٩٥ ";
 }
-n196::before { 
+n196::after { 
   content: " ١٩٦ ";
 }
-n197::before { 
+n197::after { 
   content: " ١٩٧ ";
 }
-n198::before { 
+n198::after { 
   content: " ١٩٨ ";
 }
-n199::before { 
+n199::after { 
   content: " ١٩٩ ";
 }
-n200::before { 
+n200::after { 
   content: " ٢٠٠ ";
 }
-n201::before { 
+n201::after { 
   content: " ٢٠١ ";
 }
-n202::before { 
+n202::after { 
   content: " ٢٠٢ ";
 }
-n203::before { 
+n203::after { 
   content: " ٢٠٣ ";
 }
-n204::before { 
+n204::after { 
   content: " ٢٠٤ ";
 }
-n205::before { 
+n205::after { 
   content: " ٢٠٥ ";
-  text-align: right;
-  color: #e68a00;
 }
-n206::before { 
+n206::after { 
   content: " ٢٠٦ ";
 }
-n207::before { 
+n207::after { 
   content: " ٢٠٧ ";
 }
-n208::before { 
+n208::after { 
   content: " ٢٠٨ ";
 }
-n209::before { 
+n209::after { 
   content: " ٢٠٩ ";
 }
-n210::before { 
+n210::after { 
   content: " ٢١٠ ";
 }
-n211::before { 
+n211::after { 
   content: " ٢١١ ";
 }
-n212::before { 
+n212::after { 
   content: " ٢١٢ ";
 }
-n213::before { 
+n213::after { 
   content: " ٢١٣ ";
 }
-n214::before { 
+n214::after { 
   content: " ٢١٤ ";
 }
-n215::before { 
+n215::after { 
   content: " ٢١٥ ";
 }
-n216::before { 
+n216::after { 
   content: " ٢١٦ ";
 }
-n217::before { 
+n217::after { 
   content: " ٢١٧ ";
 }
-n218::before { 
+n218::after { 
   content: " ٢١٨ ";
 }
-n219::before { ;
+n219::after { ;
   content: " ٢١٩ ";
 }
-n220::before { 
+n220::after { 
   content: " ٢٢٠ ";
 }
-n221::before { 
+n221::after { 
   content: " ٢٢١ ";
 }
-n222::before { 
+n222::after { 
   content: " ٢٢٢ ";
 }
-n223::before { 
+n223::after { 
   content: " ٢٢٣ ";
 }
-n224::before { 
+n224::after { 
   content: " ٢٢٤ ";
 }
-n225::before { 
+n225::after { 
   content: " ٢٢٥ ";
 }
-n226::before { 
+n226::after { 
   content: " ٢٢٦ ";
 }
-n227::before { 
+n227::after { 
   content: " ٢٢٧ ";
 }
-n228::before { 
+n228::after { 
   content: " ٢٢٨ ";
 }
-n229::before { 
+n229::after { 
   content: " ٢٢٩ ";
 }
-n230::before { 
+n230::after { 
   content: " ٢٣٠ ";
 }
-n231::before { 
+n231::after { 
   content: " ٢٣١ ";
 }
-n232::before { 
+n232::after { 
   content: " ٢٣٢ ";
 }
-n233::before { 
+n233::after { 
   content: " ٢٣٣ ";
 }
-n234::before { 
+n234::after { 
   content: " ٢٣٤ ";
 }
-n235::before { 
+n235::after { 
   content: " ٢٣٥ ";
 }
-n236::before { 
+n236::after { 
   content: " ٢٣٦ ";
 }
-n237::before { 
+n237::after { 
   content: " ٢٣٧ ";
 }
-n238::before { 
+n238::after { 
   content: " ٢٣٨ ";
 }
-n239::before { 
+n239::after { 
   content: " ٢٣٩ ";
 }
-n240::before { 
+n240::after { 
   content: " ٢٤٠ ";
 }
-n241::before { 
+n241::after { 
   content: " ٢٤١ ";
 }
-n242::before { 
+n242::after { 
   content: " ٢٤٢ ";
 }
-n243::before { 
+n243::after { 
   content: " ٢٤٣ ";
 }
-n244::before { 
+n244::after { 
   content: " ٢٤٤ ";
 }
-n245::before { 
+n245::after { 
   content: " ٢٤٥ ";
 }
-n246::before { 
+n246::after { 
   content: " ٢٤٦ ";
 }
-n247::before { 
+n247::after { 
   content: " ٢٤٧ ";
 }
-n248::before { 
+n248::after { 
   content: " ٢٤٨ ";
 }
-n249::before { 
+n249::after { 
   content: " ٢٤٩ ";
 }
-n250::before { 
+n250::after { 
   content: " ٢٥٠ ";
 }
-n251::before { 
+n251::after { 
   content: " ٢٥١ ";
 }
-n252::before { 
+n252::after { 
   content: " ٢٥٢ ";
 }
-n253::before { 
+n253::after { 
   content: " ٢٥٣ ";
 }
-n254::before { 
+n254::after { 
   content: " ٢٥٤ ";
 }
-n255::before { 
+n255::after { 
   content: " ٢٥٥ ";
 }
-n256::before { 
+n256::after { 
   content: " ٢٥٦ ";
 }
-n257::before { 
+n257::after { 
   content: " ٢٥٧ ";
 }
-n258::before { 
+n258::after { 
   content: " ٢٥٨ ";
 }
-n259::before { 
+n259::after { 
   content: " ٢٥٩ ";
 }
-n260::before { 
+n260::after { 
   content: " ٢٦٠ ";
 }
-n261::before { 
+n261::after { 
   content: " ٢٦١ ";
 }
-n262::before { 
+n262::after { 
   content: " ٢٦٢ ";
 }
-n263::before { 
+n263::after { 
   content: " ٢٦٣ ";
 }
-n264::before { 
+n264::after { 
   content: " ٢٦٤ ";
 }
-n265::before { 
+n265::after { 
   content: " ٢٦٥ ";
 }
-n266::before { 
+n266::after { 
   content: " ٢٦٦ ";
 }
-n267::before { 
+n267::after { 
   content: " ٢٦٧ ";
 }
-n268::before { 
+n268::after { 
   content: " ٢٦٨ ";
 }
-n269::before { 
+n269::after { 
   content: " ٢٦٩ ";
 }
-n270::before { 
+n270::after { 
   content: " ٢٧٠ ";
 }
-n271::before { 
+n271::after { 
   content: " ٢٧١ ";
 }
-n272::before { 
+n272::after { 
   content: " ٢٧٢ ";
 }
-n273::before { 
+n273::after { 
   content: " ٢٧٣ ";
 }
-n274::before { 
+n274::after { 
   content: " ٢٧٤ ";
 }
-n275::before { 
+n275::after { 
   content: " ٢٧٥ ";
 }
-n276::before { 
+n276::after { 
   content: " ٢٧٦ ";
 }
-n277::before { 
+n277::after { 
   content: " ٢٧٧ ";
 }
-n278::before { 
+n278::after { 
   content: " ٢٧٨ ";
 }
-n279::before { 
+n279::after { 
   content: " ٢٧٩ ";
 }
-n280::before { 
+n280::after { 
   content: " ٢٨٠ ";
 }
-n281::before { 
+n281::after { 
   content: " ٢٨١ ";
 }
-n282::before { 
+n282::after { 
   content: " ٢٨٢ ";
 }
-n283::before { 
+n283::after { 
   content: " ٢٨٣ ";
 }
-n284::before { 
+n284::after { 
   content: "٢٨٤";
 }
-n285::before { 
+n285::after { 
   content: "٢٨٥";
 }
-n286::before { 
+n286::after { 
   content: "٢٨٦";
 }
 .glow-on-hover {
