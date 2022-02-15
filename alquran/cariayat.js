@@ -1059,6 +1059,24 @@ $(document).ready(function(){
   });
 });
 
+$(document).ready(function(){
+  $("#myInputsurah").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myListsurah li").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+
+$(document).ready(function(){
+  $("#myInputjuzz").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myListjuzz li").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+
 
 
 
