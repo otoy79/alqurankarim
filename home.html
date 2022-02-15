@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" �� "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-  <meta charset="utf-8">
+<!DOCTYPE html>
+<html manifest="offline.manifest">
 <head>
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
 <meta http-equiv="Pragma" content="no-cache" />
@@ -24,7 +24,7 @@
 <link href="dp/dropdown2.css" rel="stylesheet" type="text/css">
        <link rel="stylesheet" href="dp/dropdown.css">
         <link rel="stylesheet" href="dp/demo.css">
-      <link href="https://dl.dropbox.com/s/innwncnrbukw78l/alert-update.css" rel="stylesheet" type="text/css">
+      
  <style>
  html, body {
       position: relative;
@@ -391,10 +391,9 @@ border: 12px solid transparent;
     animation-delay: 0.2s;
 }
 </style>
+
 </head>
 <body>
-  <script src="https://dl.dropbox.com/s/cw31bw1a4ve2zo6/alert.js"></script>
-
 <div id="Home" class="tabcontent">
 <div class="overflo" style="overflow:hidden">
  <div class="homes">
@@ -418,7 +417,7 @@ border: 12px solid transparent;
  <div id="pupBtnn" class="buttonp"></div>
   <a class="note" href="note/index.html"></a>
   <div> <a class="buttonsurah" href="surah.html" style="margin-right:30px" >SURAH</div></a>
-   <div> <a class="buttonsurah" href="jus.html">JUZ</div></a>
+   <div> <a onClick="return noHistory(this);" class="buttonsurah" href="jus.html">JUZ</div></a>
 </div>
 
  <span id="myBtnni" class="bk-modal"></span>
@@ -443,6 +442,9 @@ border: 12px solid transparent;
     <span class="tutup"><ok></span>
     </div>
   </div></div></div>
+
+<script type="text/javascript"> function noHistory(aObj) { document.location.replace(aObj.href); return false; }
+ </script>
 
 <script>
  !function(){"use strict";_iub.csConfigLegacy=!1,_iub.GVL=_iub.GVL||0;var e=document.createElement("script"),c=document.getElementsByTagName("script")[0];e.src="//cdn.iubenda.com/cookie_solution/iubenda_cs/core-c5f721f942e35d3aef3dc4b939a4ce5b.js",c.parentNode.insertBefore(e,c)}();
@@ -492,8 +494,6 @@ document.getElementById("defaultOpen").click();
 </script>
 
 <audio id="audio-player" class="d-none" src="" type="audio/mp3" controls="controls"></audio>
-
-  <script src="https://dl.dropbox.com/s/lfw3iovsury359m/bgsound.js"></script>
 
 </body>
 

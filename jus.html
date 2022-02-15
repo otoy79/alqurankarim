@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html manifest="offline.manifest">
+<head>
+<script type="text/javascript">
+            var timerStart = Date.now();
+        </script>
+    <meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+    <title>AL-QUR'AN</title>
+<meta http-equiv="Content-Type"content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="css/4.css"
+  rel="stylesheet">
+  <link href="css/3.css" rel="stylesheet" type="text/css">
+<link href="css/2.css" rel="stylesheet" type="text/css">
+ <link rel="stylesheet" href="css/1.css">
+  <link rel="stylesheet" href="css/audio-player.css">
+<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/plus.css">
+  <link href="css/acord.css" rel="stylesheet" type="text/css">
+<link href="dp/dropdown2.css" rel="stylesheet" type="text/css">
+       <link rel="stylesheet" href="dp/dropdown.css">
+        <link rel="stylesheet" href="dp/demo.css">
+     <script src="js/loading.js"></script>
+      <style type="text/css">
+.preloader {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 9999;
+background:rgb(255,255,255,0.5);
+}
+.preloader .loading {
+position: absolute;
+left: 50%;
+top: 60%;
+transform: translate(-50%,-50%);
+font: 14px arial;
+text-align: center;
+background:rgb(255,255,255,0.9);
+border: 1px solid #ddd;
+border-radius: 12px;
+padding: 6px 25px;
+}
+.tabcontent {
+  display: none;
+  border-top: none;
+  position: fixed; 
+  top: 50%; left:50%;
+  transform: translate(-50%, -50%);
+  margin: auto; 
+  background-color: white;
+  background-image:url("png/border3.g");
+   height: 100%;
+  background-color: #f5f0eb;
+     background-image:url("png/9.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-bottom: %;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+ }
+div.overflo {
+  background-color: #f5f0eb;
+  position: fixed; 
+  padding: 0px 0px 8px;
+    top: 50%; left:50%;
+  transform: translate(-50%, -50%);
+  border-top: none;
+border: 12px solid transparent;
+  padding-bottom: 30px;
+  -webkit-border-image: url(png/border3.png) 18 round; /* Safari 3.1-5 */
+  -o-border-image: url(png/border3.png) 18 round; /* Opera 11-12.1 */
+  border-image: url(png/border3.png) 30 round;
+  margin-top: -28px;
+ margin-left: 0;
+  height: 77%;
+  width: 81%;
+  overflow: auto;
+  text-align: center;
+  -webkit-animation: fadeEffect 0.2s;
+  animation: fadeEffect 0.2s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+
+    }
+
+        ul {
+            padding: 0px;
+            margin: 0px;
+        }
+        li {
+            list-style: none;
+        }
+        #more {display: none;}
+.head {
+ position: fixed; 
+            top: 0; 
+            left: 0; 
+            right: 0; 
+            margin: auto; 
+text-align: left;
+ color: #000;
+ }
+.content-head {
+ background-color: #f1f1f1;
+  border: 12px solid transparent;
+  padding-bottom: 50px;
+  -webkit-border-image: url(png/border3.png) 18 round; /* Safari 3.1-5 */
+  -o-border-image: url(png/border3.png) 18 round; /* Opera 11-12.1 */
+  border-image: url(png/border3.png) 30 round;
+
+}
+div.c {
+  border-top: 1px solid rgb(255, 165, 0);
+ text-align: right;
+  padding: 6px;
+ border-radius: px 0px;
+}
+.lt {
+  text-align: left;
+  color:#000033;
+  font-size: smaller;
+  font-weight: bold;
+  padding: 6px;
+}
+
+.tj {
+  text-align: left;
+  color:#4D7523;
+  font-size: small;
+  padding: 6px;
+}
+.navbar8 {
+  overflow: hidden;
+  position: relative;
+background-color: #3498DB;
+  background-image:url("png/9.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 5;
+ bottom: 50px;
+  text-align: center;
+ margin: 0 auto;
+ left:0;
+ padding: 6px 12px;
+border-top: 5px solid #9e6930;
+  border-bottom: 2px solid #663300;
+  z-index: 999;
+}
+.foter {
+ background-color: rgba(0,0,0,0.0);
+ position: fixed; 
+  margin: 0 auto;
+ left:0;
+text-align: center;
+bottom: 0px;
+  padding:0px;
+ width: 100%;
+ z-index: 55;
+}
+.navbar {
+  overflow: hidden;
+  position: relative;
+background-color: #3498DB;
+  background-image:url("png/9.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 5;
+ bottom:0;
+  text-align: center;
+ margin: 0 auto;
+ left:0;
+ padding: 6px 12px;
+border-top: 5px solid #663300;
+  border-bottom: 2px solid #663300;
+}
+
+button {
+  margin-top: px;
+  padding: 2px 8px;
+  transition: 0.6s;
+  font-size: 10px;
+  color: #fff;
+   cursor: pointer;
+  border: none;
+  background-color: rgba(0,0,0,0.1);
+  float: right;
+}
+.playy {
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  padding: px;
+  float: right;
+  border: 2px solid #fff;
+  margin-right: 85px;
+  margin-top: -0px;
+}
+ .header a:hover  {
+color: #fff;
+}
+.bgjuz {
+  margin-top: -8px;
+  margin-right: 15px;
+ background-image:url("png/num.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 8px;
+  float: right;
+  font-size: 12px;
+}
+</style>
+<style>
+html, body {
+      position: relative;
+      height: 100%;
+     background-image:url('png/alquranmp3.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+    }
+    body {
+      color:#000;
+      margin: 0;
+      padding: 0;
+    overflow: hidden;
+    }
+
+</style>
+<style>
+.accord {
+  margin-top: -0px; 
+  background-color: rgba(0,0,0,0.0);
+  cursor: pointer;
+  padding: 0px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  transition: 0.4s;
+  color: red;
+  border-bottom: 3px solid #663300;
+}
+
+.activeti, .accordion:hover {
+  
+}
+
+.accord:after {
+  content: '\21BA';
+  color: transparent;
+  font-weight: bold;
+  float: centered;
+  margin-left: -12px;
+  font-size: 25px;
+ border: 2px solid #ddd;
+ border-radius: 50%;
+  background: green;
+  padding: 0px 4px 1px 4px;
+ background-image:url("png/down-arrow.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 25px;
+  width: 25px;
+}
+
+.activeti:after {
+  content: "\21BB";
+   color: transparent;
+  border: 2px solid #ddd;
+ border-radius: 50%;
+ background: #9e6930;
+  padding: 0px 4px 1px 4px;
+  background-image:url("png/up-arrow.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 25px;
+  width: 25px;
+}
+
+.panell {
+  padding: 0 1px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  margin-left: -1px; 
+  margin-right: -1px; 
+  transition: max-height 0.2s ease-out;
+}
+</style>
+</head>
+<body>
+ <script type="text/javascript">
+             $(document).ready(function() {
+                 console.log("Time until DOMready: ", Date.now()-timerStart);
+             });
+             $(window).load(function() {
+                 console.log("Time until everything loaded: ", Date.now()-timerStart);
+             });
+        </script>
+  <div class="preloader">
+<div class="loading">
+<img src="png/basmalah.gif" width="90">
+<center>Memuat data.....</center>
+</div>
+</div>
+
+          <div id="Homejuz" class="tabcontent"><div class="headerjuz"> <a href="#j30" onClick="return noHistory(this);"><button class="nex" onclick="openCity(event, 'juz30')"></button></a>  <button class="glow-on-hover" onclick="openCity(event, 'Homejuz')" id="defaultOpen"><a style="color: #fff;" href="#j1" onClick="return noHistory(this);">JUZ</button></a> <a href="#j2" onClick="return noHistory(this);"><button class="pre" onclick="openCity(event, 'juz1')"></button></a>
+ <input id="myInputjuzz" type="text" placeholder=" Search juz-1~juz-30"></div>
+<div id="myListjuzz" class="overflo">   <div class="show" id='juz'><script src="alquran/homejuz.js"></script> </div></div></div>
+
+ <div id="juz1" class="tabcontent"><div class="headerjuz"><jus1> <a href="#j30" onClick="return noHistory(this);"><button class="nex" onclick="openCity(event, 'juz30')"></button></a>  <button class="glow-on-hover" onclick="openCity(event, 'juz1')"><a style="color: #fff;" href="#j1" onClick="return noHistory(this);">Al-Fatihah-1~Al-Baqarah-141</button></a> <a href="#j2" onClick="return noHistory(this);"><button class="pre" onclick="openCity(event, 'juz2')"></button></a></div><div class="overflo">   <div class="show" id='j1'><script src="alquran/01b.js"></script> <script src="alquran/02-1-141.js"></script></div></div></div>
+
+<div id="juz2" class="tabcontent"><div class="headerjuz"><jus2>  <a href="#j1" onClick="return noHistory(this);"><button class="nex" onclick="openCity(event, 'juz1')"></button></a>  <button class="glow-on-hover" onclick="openCity(event, 'juz2')"><a style="color: #fff;" href="#j2" onClick="return noHistory(this);">Al-Baqarah-142~Al-Baqarah-251</button></a> <a href="#j3" onClick="return noHistory(this);"><button class="pre" onclick="openCity(event, 'juz3')"></button></a></div><div class="overflo">  <div id='j2'></div> <script src="alquran/basmalahjus.js"></script> <script src="alquran/02-142-251.js"></script><script src="alquran/end.js"></script></div></div>
+
+<div id="juz3" class="tabcontent"><div class="headerjuz"><jus3>  <a href="#j2" onClick="return noHistory(this);"><button class="nex" onclick="openCity(event, 'juz2')"></button></a>  <button class="glow-on-hover" onclick="openCity(event, 'juz3')"><a style="color: #fff;" href="#j3" onClick="return noHistory(this);">Al-Baqarah-252~Al-'Imraan-91</button></a> <a href="#j4" onClick="return noHistory(this);"><button class="pre" onclick="openCity(event, 'juz4')"></button></a></div><div class="overflo">  <div id='j3'></div> <script src="alquran/basmalahjus.js"></script> <script src="alquran/02-252-286.js"></script><script src="alquran/03-1-91.js"></script><script src="alquran/end.js"></script></div></div>
+
+<div id="juz4" class="tabcontent"><div class="headerjuz"><jus4>  <a href="#j3" onClick="return noHistory(this);"><button class="nex" onclick="openCity(event, 'juz3')"></button></a>  <button class="glow-on-hover" onclick="openCity(event, 'juz4')"><a style="color: #fff;" href="#j4" onClick="return noHistory(this);">Al-'Imraan-92~An-Nisaa'-23</button></a> <a href="#j5" onClick="return noHistory(this);"><button class="pre" onclick="openCity(event, 'juz5')"></button></a></div><div class="overflo">  <div id='j4'></div> <script src="alquran/basmalahjus.js"></script> <script src="alquran/03-92-200.js"></script><script src="alquran/04-1-23.js"></script><script src="alquran/end.js"></script></div></div>
+
+<div id="juz5" class="tabcontent"><div class="headerjuz"><jus5> <a href="#j4" onClick="return noHistory(this);"><button class="nex" onclick="openCity(event, 'juz4')"></button></a>  <button class="glow-on-hover" onclick="openCity(event, 'juz5')"><a style="color: #fff;" href="#j5" onClick="return noHistory(this);">An-Nisaa'-24~An-Nisaa'-147</button></a> <a href="#j6" onClick="return noHistory(this);"><button class="pre" onclick="openCity(event, 'juz6')"></button></a></div><div class="overflo">  <div id='j5'></div> <script src="alquran/basmalahjus.js"></script> <script src="alquran/04-24-147.js"></script><script src="alquran/end.js"></script></div></div>
+
+<div id="juz6" class="tabcontent"><div class="headerjuz"><jus6> <a href="#j5" onClick="return noHistory(this);"><button class="nex" onclick="openCity(event, 'juz5')"></button></a>  <button class="glow-on-hover" onclick="openCity(event, 'juz6')"><a style="color: #fff;" href="#j6" onClick="return noHistory(this);">An-Nisaa'-148~Al-Maa'idah-82</button></a> <a href="#j7" onClick="return noHistory(this);"><button class="pre" onclick="openCity(event, 'juz7')"></button></a></div><div class="overflo">  <div id='j6'></div> <script src="alquran/basmalahjus.js"></script> <script src="alquran/04-148-176.js"></script> <script src="alquran/05-1-82.js"></script><script src="alquran/end.js"></script></div></div>
+
+<div id="juz7" class="tabcontent"><div class="headerjuz"><jus7>  <a href="#j6" onClick="return noHistory(this);"><button class="nex" onclick="openCity(event, 'juz6')"></button></a>  <button class="glow-on-hover" onclick="openCity(event, 'juz7')"><a style="color: #fff;" href="#j7" onClick="return noHistory(this);">Al-Maa'dah-83~Al-An'aam-110</button></a> <a href="#j8" onClick="return noHistory(this);"><button class="pre" onclick="openCity(event, 'juz8')"></button></a></div><div class="overflo">  <div id='j7'></div> <script src="alquran/basmalahjus.js"></script> <script src="alquran/05-83-120.js"></script> <script src="alquran/06-1-110.js"></script><script src="alquran/end.js"></script></div></div>
+
+<div id="juz8" class="tabcontent"><div class="headerjuz"><jus8>  <a href="#j7" onClick="return noHistory(this);"><button class="nex" onclick="openCity(event, 'juz7')"></button></a>  <button class="glow-on-hover" onclick="openCity(event, 'juz8')"><a style="color: #fff;" href="#j8" onClick="return noHistory(this);">Al-An'aam-111~Al-'Araaf-87</button></a> <a href="#j9" onClick="return noHistory(this);"><button class="pre" onclick="openCity(event, 'juz9')"></button></a></div><div class="overflo"> <div id='j8'></div>  <script src="alquran/basmalahjus.js"></script> <script src="alquran/06-111-165.js"></script> <script src="alquran/07-1-87.js"></script><script src="alquran/end.js"></script></div></div>
+
+<div id="juz9" class="tabcontent"><div class="headerjuz"><jus9>  <a href="#j8" onClick="return noHistory(this);"><button class="nex" onclick="openCity(event, 'juz8')"></button></a>  <button class="glow-on-hover" onclick="openCity(event, 'juz9')"><a style="color: #fff;" href="#j9" onClick="return noHistory(this);">Al-'Araaf-88~Al-Anfaal-40</button></a> <a href="#j10" onClick="return noHistory(this);"><button class="pre" onclick="openCity(event, 'juz10')"></button></a></div><div class="overflo"> <div id='j9'></div>  <script src="alquran/basmalahjus.js"></script> <script src="alquran/07-88-206.js"></script> <script src="alquran/08-1-40.js"></script><script src="alquran/end.js"></script></div></div>
+
+<div id="juz10" class="tabcontent"><div class="headerjuz"><jus10> <a href="#j9" onClick="return noHistory(this);"><button class="nex" onclick="openCity(event, 'juz9')"></button></a>  <button class="glow-on-hover" onclick="openCity(event, 'juz10')"><a style="color: #fff;" href="#j10" onClick="return noHistory(this);">Al-Anfaal-41~At-Taubah-93</button></a> <a href="#j11" onClick="return noHistory(this);"><button class="pre" onclick="openCity(event, 'juz11')"></button></a></div><div class="overflo"> <div id='j10'></div>  <script src="alquran/basmalahjus.js"></script> <script src="alquran/08-41-75.js"></script> <script src="alquran/09-1-93.js"></script><script src="alquran/end.js"></script></div></div>
+
+<div id="juz11" class="tabcontent"><div class="headerjuz"><jus11>  <a href="#j10" onClick="return noHistory(this);"><button class="nex" onclick="openCity(event, 'juz10')"></button></a>  <button class="glow-on-hover" onclick="openCity(event, 'juz11')"><a style="color: #fff;" href="#j11" onClick="return noHistory(this);">At-Taubah-94~Huud-5</button></a> <a href="#j12" onClick="return noHistory(this);"><button class="pre" onclick="openCity(event, 'juz12')"></button></a></div><div class="overflo"> <div id='j11'></div>  <script src="alquran/basmalahjus.js"></script> <script src="alquran/09-94-129.js"></script> <script src="alquran/10-1-109.js"></script><script src="alquran/11-1-5.js"></script><script src="alquran/end.js"></script></div></div>
+
+<div id="juz12" class="tabcontent"><div class="headerjuz"><jus12>  <a href="#j11" onClick="return noHistory(this);"><button class="nex" onclick="openCity(event, 'juz11')"></button></a>  <button class="glow-on-hover" onclick="openCity(event, 'juz12')"><a style="color: #fff;" href="#j12" onClick="return noHistory(this);">Huud-6~Yusuf-52</button></a> <a href="#j13" onClick="return noHistory(this);"><button class="pre" onclick="openCity(event, 'juz13')"></button></a></div><div class="overflo"> <div id='j12'></div>  <script src="alquran/basmalahjus.js"></script> <script src="alquran/11-6-123.js"></script> <script src="alquran/12-1-52.js"></script> <script src="alquran/end.js"></script></div></div>
+
+<div id="juz13" class="tabcontent"><div class="headerjuz"><jus13>  <a href="#j12" onClick="return noHistory(this);"><button class="nex" onclick="openCity(event, 'juz12')"></button></a>  <button class="glow-on-hover" onclick="openCity(event, 'juz13')"><a style="color: #fff;" href="#j13" onClick="return noHistory(this);">Yusuf-53~Al-Hijr-1</button></a> <a href="#j14" onClick="return noHistory(this);"><button class="pre" onclick="openCity(event, 'juz14')"></button></a></div><div class="overflo"> <div id='j13'></div>  <script src="alquran/basmalahjus.js"></script> <script src="alquran/12-53-111.js"></script> <script src="alquran/13-1-43.js"></script> <script src="alquran/14-1-52.js"></script><script src="alquran/15-1.js"></script> <script src="alquran/end.js"></script></div></div>
+
+<div id="juz14" class="tabcontent"><div class="headerjuz"><jus14>  <a href="#j13" onClick="return noHistory(this);"><button class="nex" onclick="openCity(event, 'juz13')"></button></a>  <button class="glow-on-hover" onclick="openCity(event, 'juz14')"><a style="color: #fff;" href="#j14" onClick="return noHistory(this);">Al-Hijr-2~An-Nahl-128</button></a> <a href="#j15" onClick="return noHistory(this);"><button class="pre" onclick="openCity(event, 'juz15')"></button></a></div><div class="overflo"> <div id='j14'></div>  <script src="alquran/basmalahjus.js"></script> <script src="alquran/15-2-99.js"></script> <script src="alquran/16-1-128.js"></script> <script src="alquran/end.js"></script></div></div>
+
+<div id="juz15" class="tabcontent"><div class="headerjuz"><jus15> <a href="#j14" onClick="return noHistory(this);"><button class="nex" onclick="openCity(event, 'juz14')"></button></a>  <button class="glow-on-hover" onclick="openCity(event, 'juz15')"><a style="color: #fff;" href="#j15" onClick="return noHistory(this);">Al-Israa'-1~Al-Kahfi-74</button></a> <a href="#j16" onClick="return noHistory(this);"><button class="pre" onclick="openCity(event, 'juz16')"></button></a></div><div class="overflo"> <div id='j15'></div>  <script src="alquran/17-1-111.js"></script> <script src="alquran/18-1-74.js"></script> <script src="alquran/end.js"></script></div></div>
+
+<div id="juz16" class="tabcontent"><div class="headerjuz"><jus16>  <a href="#j15" onClick="return noHistory(this);"><button class="nex" onclick="openCity(event, 'juz15')"></button></a>  <button class="glow-on-hover" onclick="openCity(event, 'juz16')"><a style="color: #fff;" href="#j16" onClick="return noHistory(this);">Al-Kahfi-75~Ath-Thahaa-135</button></a> <a href="#j17" onClick="return noHistory(this);"><button class="pre" onclick="openCity(event, 'juz17')"></button></a></div><div class="overflo">  <div id='j16'></div>  <script src="alquran/basmalahjus.js"></script>  <script src="alquran/18-75-110.js"></script> <script src="alquran/19.js"></script>  <script src="alquran/20.js"></script> <script src="alquran/end.js"></script></div></div>
+
+<div id="juz17" class="tabcontent"><div class="headerjuz"><jus17><a href="#j16" onClick="return noHistory(this);"><button class="nex" onclick="openCity(event, 'juz16')"></button></a>  <button class="glow-on-hover" onclick="openCity(event, 'juz17')"><a style="color: #fff;" href="#j17" onClick="return noHistory(this);">Al-Anbiyaa'-1~Al-Hajj-78</button></a> <a href="#j18" onClick="return noHistory(this);"><button class="pre" onclick="openCity(event, 'juz18')"></button></a></div><div class="overflo">  <div id='j17'></div> <script src="alquran/21.js"></script> <script src="alquran/22.js"></script>  <script src="alquran/end.js"></script></div></div>
+
+<div id="juz18" class="tabcontent"><div class="headerjuz"><jus18>  <a href="#j17" onClick="return noHistory(this);"><button class="nex" onclick="openCity(event, 'juz17')"></button></a>  <button class="glow-on-hover" onclick="openCity(event, 'juz18')"><a style="color: #fff;" href="#j18" onClick="return noHistory(this);">Al-Mu'minuun-1~Al-Furqaan-20</button></a> <a href="#j19" onClick="return noHistory(this);"><button class="pre" onclick="openCity(event, 'juz19')"></button></a></div><div class="overflo">  <div id='j18'></div> <script src="alquran/23.js"></script> <script src="alquran/24.js"></script> <script src="alquran/25-1-20.js"></script>  <script src="alquran/end.js"></script></div></div>
+
+<div id="juz19" class="tabcontent"><div class="headerjuz"><jus19> <a href="#j18" onClick="return noHistory(this);"><button class="nex" onclick="openCity(event, 'juz18')"></button></a>  <button class="glow-on-hover" onclick="openCity(event, 'juz19')"><a style="color: #fff;" href="#j19" onClick="return noHistory(this);">Al-Furqaan-21~An-Naml-59</button></a> <a href="#j20" onClick="return noHistory(this);"><button class="pre" onclick="openCity(event, 'juz20')"></button></a></div><div class="overflo">  <div id='j19'></div> <script src="alquran/basmalahjus.js"></script> <script src="alquran/25-21-77.js"></script> <script src="alquran/26.js"></script><script src="alquran/27-1-59.js"></script>  <script src="alquran/end.js"></script></div></div>
+
+<div id="juz20" class="tabcontent"><div class="headerjuz"><jus20>  <a href="#j19" onClick="return noHistory(this);"><button class="nex" onclick="openCity(event, 'juz19')"></button></a>  <button class="glow-on-hover" onclick="openCity(event, 'juz20')"><a style="color: #fff;" href="#j20" onClick="return noHistory(this);">An-Naml-60~Al-'Ankabuut-44</button></a> <a href="#j21" onClick="return noHistory(this);"><button class="pre" onclick="openCity(event, 'juz21')"></button></a></div><div class="overflo">  <div id='j20'></div> <script src="alquran/basmalahjus.js"></script> <script src="alquran/27-60-93.js"></script> <script src="alquran/28.js"></script><script src="alquran/29-1-44.js"></script>  <script src="alquran/end.js"></script></div></div>
+
+<div id="juz21" class="tabcontent"><div class="headerjuz"><jus21>  <a href="#j20" onClick="return noHistory(this);"><button class="nex" onclick="openCity(event, 'juz20')"></button></a>  <button class="glow-on-hover" onclick="openCity(event, 'juz21')"><a style="color: #fff;" href="#j21" onClick="return noHistory(this);">Al-'Ankabuut-45~Al-Ahzab-30</button></a> <a href="#j22" onClick="return noHistory(this);"><button class="pre" onclick="openCity(event, 'juz22')"></button></a></div><div class="overflo">  <div id='j21'></div> <script src="alquran/basmalahjus.js"></script> <script src="alquran/29-45-69.js"></script> <script src="alquran/30.js"></script> <script src="alquran/31.js"></script> <script src="alquran/32.js"></script><script src="alquran/33-1-30.js"></script>  <script src="alquran/end.js"></script></div></div>
+
+<div id="juz22" class="tabcontent"><div class="headerjuz"><jus22><a href="#j21" onClick="return noHistory(this);"><button class="nex" onclick="openCity(event, 'juz21')"></button></a>  <button class="glow-on-hover" onclick="openCity(event, 'juz22')"><a style="color: #fff;" href="#j22" onClick="return noHistory(this);">Al-Ahzab-31~Yaasiin-21</button></a> <a href="#j23" onClick="return noHistory(this);"><button class="pre" onclick="openCity(event, 'juz23')"></button></a></div><div class="overflo">  <div id='j22'></div> <script src="alquran/basmalahjus.js"></script> <script src="alquran/33-31-73.js"></script> <script src="alquran/34.js"></script> <script src="alquran/35.js"></script><script src="alquran/36-1-21.js"></script>  <script src="alquran/end.js"></script></div></div>
+
+<div id="juz23" class="tabcontent"><div class="headerjuz"><jus23> <a href="#j22" onClick="return noHistory(this);"><button class="nex" onclick="openCity(event, 'juz22')"></button></a>  <button class="glow-on-hover" onclick="openCity(event, 'juz23')"><a style="color: #fff;" href="#j23" onClick="return noHistory(this);">Yaasiin-22~Az-Zumar-31</button></a> <a href="#j24" onClick="return noHistory(this);"><button class="pre" onclick="openCity(event, 'juz24')"></button></a></div><div class="overflo">  <div id='j23'></div> <script src="alquran/basmalahjus.js"></script> <script src="alquran/36-22-83.js"></script> <script src="alquran/37.js"></script> <script src="alquran/38.js"></script><script src="alquran/39-1-31.js"></script>  <script src="alquran/end.js"></script></div></div>
+
+<div id="juz24" class="tabcontent"><div class="headerjuz"><jus24> <a href="#j23" onClick="return noHistory(this);"><button class="nex" onclick="openCity(event, 'juz23')"></button></a>  <button class="glow-on-hover" onclick="openCity(event, 'juz24')"><a style="color: #fff;" href="#j24" onClick="return noHistory(this);">Az-Zumar-32~Fushshilat-46</button></a> <a href="#j25" onClick="return noHistory(this);"><button class="pre" onclick="openCity(event, 'juz25')"></button></a></div><div class="overflo">  <div id='j24'></div> <script src="alquran/basmalahjus.js"></script> <script src="alquran/39-32-75.js"></script> <script src="alquran/40.js"></script> <script src="alquran/41-1-46.js"></script>  <script src="alquran/end.js"></script></div></div>
+
+<div id="juz25" class="tabcontent"><div class="headerjuz"><jus25> <a href="#j24" onClick="return noHistory(this);"><button class="nex" onclick="openCity(event, 'juz24')"></button></a>  <button class="glow-on-hover" onclick="openCity(event, 'juz25')"><a style="color: #fff;" href="#j25" onClick="return noHistory(this);">Fushshilat-47~Al-Jatsiyah-37</button></a> <a href="#j26" onClick="return noHistory(this);"><button class="pre" onclick="openCity(event, 'juz26')"></button></a></div><div class="overflo">  <div id='j25'></div> <script src="alquran/basmalahjus.js"></script> <script src="alquran/41-47-54.js"></script> <script src="alquran/42.js"></script> <script src="alquran/43.js"></script> <script src="alquran/44.js"></script>  <script src="alquran/45.js"></script>  <script src="alquran/end.js"></script></div></div>
+
+<div id="juz26" class="tabcontent"><div class="headerjuz"><jus26> <a href="#j25" onClick="return noHistory(this);"><button class="nex" onclick="openCity(event, 'juz25')"></button></a>  <button class="glow-on-hover" onclick="openCity(event, 'juz26')"><a style="color: #fff;" href="#j26" onClick="return noHistory(this);">Al-Ahqaaf-1~Adz-Dzariyaat-30</button></a> <a href="#j27" onClick="return noHistory(this);"><button class="pre" onclick="openCity(event, 'juz27')"></button></a></div><div class="overflo">  <div id='j26'></div>  <script src="alquran/46.js"></script> <script src="alquran/47.js"></script> <script src="alquran/48.js"></script> <script src="alquran/49.js"></script>  <script src="alquran/50.js"></script>  <script src="alquran/51-1-30.js"></script><script src="alquran/end.js"></script></div></div>
+
+<div id="juz27" class="tabcontent"><div class="headerjuz"><jus27> <a href="#j26" onClick="return noHistory(this);"><button class="nex" onclick="openCity(event, 'juz26')"></button></a>  <button class="glow-on-hover" onclick="openCity(event, 'juz27')"><a style="color: #fff;" href="#j27" onClick="return noHistory(this);">Adz-Dzariyaat-31~Al-Hadiid-29</button></a> <a href="#j28" onClick="return noHistory(this);"><button class="pre" onclick="openCity(event, 'juz28')"></button></a></div><div class="overflo">  <div id='j27'></div>  <script src="alquran/basmalahjus.js"></script>   <script src="alquran/51-31-60.js"></script> <script src="alquran/52.js"></script> <script src="alquran/53.js"></script> <script src="alquran/54.js"></script>  <script src="alquran/55.js"></script>  <script src="alquran/56.js"></script>  <script src="alquran/57.js"></script>  <script src="alquran/end.js"></script></div></div>
+
+<div id="juz28" class="tabcontent"><div class="headerjuz"><jus28><a href="#j27" onClick="return noHistory(this);"><button class="nex" onclick="openCity(event, 'juz27')"></button></a>  <button class="glow-on-hover" onclick="openCity(event, 'juz28')"><a style="color: #fff;" href="#j28" onClick="return noHistory(this);">Al-Mujaadilah-1~At-Tahriim-12</button></a> <a href="#j29" onClick="return noHistory(this);"><button class="pre" onclick="openCity(event, 'juz29')"></button></a></div><div class="overflo">  <div id='j28'></div>  <script src="alquran/58.js"></script> <script src="alquran/59.js"></script> <script src="alquran/60.js"></script> <script src="alquran/61.js"></script>  <script src="alquran/62.js"></script>  <script src="alquran/63.js"></script>  <script src="alquran/64.js"></script>  <script src="alquran/65.js"></script>  <script src="alquran/66.js"></script>  <script src="alquran/end.js"></script></div></div>
+
+<div id="juz29" class="tabcontent"><div class="headerjuz"><jus29>  <a href="#j28" onClick="return noHistory(this);"><button class="nex" onclick="openCity(event, 'juz28')"></button></a>  <button class="glow-on-hover" onclick="openCity(event, 'juz29')"><a style="color: #fff;" href="#j29" onClick="return noHistory(this);">Al-Mulk-1~Al-Mursalat-50</button></a> <a href="#j30" onClick="return noHistory(this);"><button class="pre" onclick="openCity(event, 'juz30')"></button></a></div><div class="overflo">  <div id='j29'></div>  <script src="alquran/67.js"></script> <script src="alquran/68.js"></script> <script src="alquran/69.js"></script> <script src="alquran/70.js"></script>  <script src="alquran/71.js"></script>  <script src="alquran/72.js"></script>  <script src="alquran/73.js"></script>  <script src="alquran/74.js"></script>  <script src="alquran/75.js"></script>  <script src="alquran/76.js"></script>  <script src="alquran/77.js"></script>  <script src="alquran/end.js"></script></div></div>
+
+<div id="juz30" class="tabcontent"><div class="headerjuz"><jus30><a href="#j29" onClick="return noHistory(this);"><button class="nex" onclick="openCity(event, 'juz29')"></button></a>  <button class="glow-on-hover" onclick="openCity(event, 'juz30')"><a style="color: #fff;" href="#j30" onClick="return noHistory(this);">An-Nabaa'-1~An-Naas-6</button></a> <a href="#j1" onClick="return noHistory(this);"><button class="pre" onclick="openCity(event, 'juz1')"></button></a></div><div class="overflo">  <div id='j30'></div>  <script src="alquran/78.js"></script> <script src="alquran/79.js"></script> <script src="alquran/80.js"></script> <script src="alquran/81.js"></script> <script src="alquran/82.js"></script>  <script src="alquran/83.js"></script>  <script src="alquran/84.js"></script>  <script src="alquran/85.js"></script>  <script src="alquran/86.js"></script>  <script src="alquran/87.js"></script> <script src="alquran/88.js"></script><script src="alquran/89.js"></script><script src="alquran/90.js"></script><script src="alquran/91.js"></script><script src="alquran/92.js"></script><script src="alquran/93.js"></script><script src="alquran/94.js"></script><script src="alquran/95.js"></script><script src="alquran/96.js"></script><script src="alquran/97.js"></script><script src="alquran/98.js"></script><script src="alquran/99.js"></script><script src="alquran/100.js"></script><script src="alquran/101.js"></script><script src="alquran/102.js"></script><script src="alquran/103.js"></script><script src="alquran/104.js"></script><script src="alquran/105.js"></script><script src="alquran/106.js"></script><script src="alquran/107.js"></script><script src="alquran/108.js"></script><script src="alquran/109.js"></script><script src="alquran/110.js"></script><script src="alquran/111.js"></script><script src="alquran/112.js"></script><script src="alquran/113.js"></script><script src="alquran/114.js"></script><script src="alquran/end.js"></script></div></div>
+</div></div></div>
+
+
+  <div class="dropdown dropdown-right">
+                <div onclick="openCity(event, 'Homejuz')" class="more-btn"><img src='png/juz.png' style='width:45px;height:23px;'>
+                </div>
+              </div></div></div>
+
+
+<div class="foter">
+<button class="accord"></button>
+<div class="panell">
+  <div class="navbar">
+
+<span class="playy">
+   <img  id="pause-button"class="material-icons play-pause d-none text-primary mr-2"aria-hidden="true" src="png/pause.png" style="width:22px;height:22px;margin-top:px;">
+    <img id="play-button"class="material-icons play-pause text-primary mr-2" aria-hidden="true" src="png/play.png" style="width:22px;height:22px;margin-top:px;"></i>
+          <span id="pause-button"class="material-icons play-pause d-none text-primary mr-2"aria-hidden="true"></span>
+</span>
+
+
+  
+<!-- Trigger/Open The Modal -->
+<span id="pupBtnn" class="fs"></span>
+
+<span id="otoyBtnku" class="font"></span>
+
+ <span id="myBtnni" class="bk-modal"><img src='png/full.png' style="width:28px;height:28px;margin-top: 16px;"></span>
+</div></div></div></div>
+
+  <!-- Modal content -->
+ <div id="myModal" class="modal">
+<div class="col ml-auto">
+          </div>
+  <div class="modal-content">
+ <div class="header2">
+    <img id="thumbnail" class="img-fluid rc" src="png/Allahu.png" alt="">
+</div>
+<div class="a">
+ <div class="roll animated animatedFadeInUp fadeInUp">
+<div class="lead" id="title">
+        </div> </div></div></div>
+
+  <div class="navbar2" style="bottom: 1px;">
+ <div class="p-0 m-0" id="now-playing">
+    <span class="close"><img class="accordion-left" src="png/Collapse1.png" style="padding-right:20px;width:26px;height:26px;margin-top:5px;"></span>
+
+</div>
+
+ <div class="row align-items-center -0 mb-0 mx-0">
+  <div id="mDIV">
+      <a id="play-button"class="material-icons play-pause text-primary mr-2 mr-3"  aria-hidden="true"><span onclick="mFunction()" style="padding-left:0px;margin-top:px;"><img src="png/plays1.png" style="padding-left:30px;left;width:16px;height:16px;margin-top:-2px;"></span></a>
+</div>
+<a id="play-button" class="material-icons play-pause text-primary mr-2 mr-3" aria-hidden="true"><span onclick="mFunction()" style="margin-left:27px;"><img src="png/stop1.png" style="padding-left:px;width16px;height:16px;margin-top:-2px;"></span></a>
+         <a id="next-button"class="material-icons text-primary ml-2 mr-3" aria-hidden="true"><img src="png/nexs1.png" style="padding-left:0px;width:22px;height:16px;margin-top:-2px;"></a>
+         <div id="grad1"> <div class="progress-bar"></a>
+</div></div></div></div>
+</div></div></div></div>
+  
+<!-- The Modal-pup -->
+<div id="pupModal" class="modalpup-pup">
+
+  <!-- Modal content -->
+  <div class="pup-content">
+    <div class="modal-header">
+      Tajwid Block Warna :
+    </div>
+    <div class="modal-body">
+     
+ <p id="tajwid"></p>
+
+ <div class="modal-footer">
+    <span class="tutup"><ok></span>
+    </div>
+  </div></div></div>
+<script src="js/tajwid.js"></script>
+
+
+<!-- The Modalle -->
+<div id="otoyModal" class="modalle">
+
+  <!-- Modal content -->
+  <div class="modalle-content">
+    <div class="modalle-body">
+     <b>Arabic Font</b><div class="zoom" id="demo"></div><br><br>
+<div id="closefont"></div>
+ <div id="fontsize"></div><br>
+ <div class="modalle-footer">
+    <span class="silang"><ok></span>
+    </div>
+  </div></div></div>
+<script src="js/"></script>
+
+<script type="text/javascript" src="offline/jquery-1.4.min.js"></script>
+<script type="text/javascript" src="offline/offline.js"></script>
+
+<script src="js/content/pengantar.js"></script>
+<script src="js/content.js"></script>
+<script src="alquran/searchJquery.js"></script>
+<script src="alquran/cariayat.js"></script>
+<script src="js/camp.js"></script>
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+<script>
+    $(document).ready(function(){
+      $(".preloader").fadeOut();
+    })
+    </script>
+<script>
+var acc = document.getElementsByClassName("accord");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("activeti");
+    var panell = this.nextElementSibling;
+    if (panell.style.maxHeight) {
+      panell.style.maxHeight = null;
+    } else {
+      panell.style.maxHeight = panell.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+
+  <script type="text/javascript"> function noHistory(aObj) { document.location.replace(aObj.href); return false; }
+ </script>
+
+  <script>
+function mFunction() {
+  var x = document.getElementById("mDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+   
+
+<link href="css/demo.css" rel="stylesheet" type="text/css"/>	
+		<link href="css/zoom.css" rel="stylesheet" type="text/css"/>
+			<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>	
+<script type="text/javascript" src="css/zoom.min.js"></script>
+<script type="text/javascript">
+		$("document").ready(function(){	
+			$("#demo").zoom({
+				path: "div.c"
+				//show/hide				
+				, show_zoom: true //font-size
+				, show_alignment: false //text-align
+				, show_font_family: true //font-family
+				, show_bold: false //font-weight
+				, show_colors: true //color
+				, show_reset: true //reset
+
+                 //default properties
+	            , font_size: "28"
+	            , font_family:  "lpmq"
+	            , font_weight: "normal"
+                , line_height_step: 32
+	            , text_align: "right"
+	            , color: "black"
+             
+                , colors: ["#000000", "#660066", "#0000cc", "#ff0000", "#006600"]
+			});
+		});
+		</script>
+
+<script type="text/javascript">
+		$("document").ready(function(){	
+			$("#demo1").zoom({
+				path: ".lt"
+				
+				//show/hide				
+				,show_alignment: false //text-align
+				,show_font_family: false //font-family
+				,show_bold: true //font-weight
+				,show_colors: true //color
+				,show_reset: true //reset
+				,show_zoom: true //font-size
+
+                 //default properties
+	            , font_size: "12"
+	            , font_family: "serif"
+	            , font_weight: "bold"
+                , line_height_step: 4
+	            , text_align: "justify"
+	            , color: "black"
+              
+              
+                , colors: ["#000000", "#660066", "#0000cc", "#ff0000", "#006600"]
+			});
+		});
+		</script>
+	<script type="text/javascript">
+		$("document").ready(function(){	
+			$("#demo2").zoom({
+				path: ".tj"
+				
+				//show/hide				
+				,show_zoom: true //font-size
+				,show_alignment: false //text-align
+				,show_font_family: false //font-family
+				,show_bold: true //font-weight
+				,show_colors: true //color
+				,show_reset: true //reset
+
+                 //default properties
+	            , font_size: "12"
+	            , font_family: "verdana"
+	            , font_weight: "normal"
+                , line_height_step: 4
+	            , text_align: "justify"
+	            , color: "green"
+                 , colors: ["#000000", "#660066", "#0000cc", "#ff0000", "#006600"]
+			});
+		});
+		</script>
+
+ <script src="jquery-1.12.4.min.js"></script>
+        <script src="dp/dropdown.js" charset="utf-8"></script>
+
+<script src="js/jquery-ui-slider.js" charset="utf-8"></script>
+<script src="js/audioPlayer.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<audio id="audio-player" class="d-none" src="" type="audio/mp3" controls="controls"></audio>
+
+</body>
+
+</html>
