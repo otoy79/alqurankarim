@@ -1,0 +1,17 @@
+document.writeln("<div class=\"button2\">");
+document.writeln("      ");
+document.writeln("بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ");
+document.writeln("</div>");
+document.writeln(" <br>");
+document.writeln("&nbsp; Segala puji bagi Allah SWT, Tuhan semesta alam. Shalawat dan salam semoga tercurah kepada Nabi Muhammad saw, keluarganya, para sahabat dan orang-orang yang mengikuti serta mencintainya.");
+document.writeln("<br><br>");
+document.writeln("&nbsp; Al Quran adalah firman Allah yang pasti benarnya dan seluruh pernyataannya telah dan akan terbuktikan pada saatnya sehingga umat Islam perlu mengetahui apa saja yang telah Allah firmankan yang terkait dengan kehidupan dan jagat raya ini. <br><br>");
+document.writeln("&nbsp; Dengan keterbatasan pengetahuan dan pemahaman penulis dalam menterjemahkan ayat Al Quran, penulis berharap kiranya para pembaca dapat memberikan masukan berupa saran pendapat tentang penyusunan Kata Kurang atau salah sehingga diharapkan  lebih mendekati kepada kebenaran dari apa yang Allah maksudkan dalam Al Quran.");
+document.writeln("<br>");
+document.writeln("<h4>* NOTE*<br></h4><b> # Untuk Tajwid Warna Mohan Maaf Belum Terselesaikan Insha Allah Mudah-mudah cepat selesai Mohon Do'anya</b><br> Kritik & Saran : ");
+document.writeln(" <h3>");
+document.writeln("Silahkan Hubungi Kami :</h3>");
+document.writeln("	<div align=\"center\">");
+document.writeln("<a href=\"https://api.whatsapp.com/send?phone=6281806420688&amp;text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85....\"><img src=\"png/wa.png\" width=\"120\" height=\"60\"></a>");
+document.writeln("<br>");
+document.writeln("<a href=\"mailto:otoy079@gmail.com\"><img src=\"png/gmail.png\" width=\"50\" height=\"50\"></a>");
