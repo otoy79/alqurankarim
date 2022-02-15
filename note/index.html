@@ -1,0 +1,254 @@
+<html>
+<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+<head>
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" href="notes.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Notes</title>
+<style>
+.foter {
+ background-color: rgba(0,0,0,0.0);
+ position: fixed; 
+  margin: 0 auto;
+ left:0;
+text-align: right;
+bottom: 1px;
+  padding:0px;
+ color: #000;
+ width: 100%;
+ z-index: 55;
+}
+.content {
+  margin-top: 75px;
+  width: 100%;
+  padding: 0 1px;
+  background-color: white;
+}
+#navbar {
+  position: absolute; 
+  top: 0; 
+   left: 0; 
+  margin: auto;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #bbb;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  border: px solid #777;
+  padding: 8px 25px;
+  flex: 5;
+}
+</style>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 999; /* Sit on top */
+  padding-top: 5px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background:rgba(255,255,255, 0.3); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.3s;
+  animation-name: animatetop;
+  animation-duration: 0.3s
+}
+
+
+/* The Close Button */
+.close {
+  position: absolute; 
+  bottom: 0; 
+   left: 0; 
+  background: blue; 
+  position: relative;
+  margin-left:70px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  float: left;
+}
+
+.close::after {
+  content: "OK";
+  background: #000; 
+  cursor: pointer;
+  border-radius: 8px;
+  color: #fff;
+  padding: 2px;
+  width: 1.2em;
+  height: 1.2em;
+  text-align: center;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {bottom: -300px; opacity: 0} 
+  to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+.ttp {
+  border: 1px solid #fff;
+  position: relative;
+  flaot: right;
+  margin-left: 35px;
+  padding: 2px;
+  border-radius: 4px;
+}
+</style>
+
+</head>
+
+<body>
+  <div id="navbar">
+   Catatan Bacaan :<span id="myBtn" class="ttp"><img src="../png/tulis.png" style="width:30px;height:29px;margin-top: 0px;"></span>
+    </div>
+<div class="content">
+<div class="foter">
+<input type="button" class="btn btn-primary" value="Hapus Semua Catatan" onclick="todo.clear();"/>
+<div id="delete-div">Delete</div>
+</div>
+
+<div class="task-list" id="pending">
+</div>
+
+
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-body">
+      <div class="task-list">
+<h4>Tulis  Catatan :</h4>
+<form id="todo-form">
+<input type="text" placeholder="Surat..." />
+<textarea placeholder="Ayat..."></textarea>
+<input type="text" id="datepicker" placeholder="Hari/Tgl (dd/mm/yy)" />
+<input type="button" class="btn btn-primary" value="Simpan" onclick="todo.add();" />
+</form><span class="btn btn-primary close"></span>
+</div></div></div>
+    </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<script>
+var acc = document.getElementsByClassName("accord");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("activeti");
+    var panell = this.nextElementSibling;
+    if (panell.style.maxHeight) {
+      panell.style.maxHeight = null;
+    } else {
+      panell.style.maxHeight = panell.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+<script src="note.js"></script> 
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script> 
+<script src="todo.js"></script> 
+<script type="text/javascript">
+			$("#datepicker").datepicker();
+			$("#datepicker").datepicker("option", "dateFormat", "dd/mm/yy");
+			todo.init();
+		</script>
+        <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
